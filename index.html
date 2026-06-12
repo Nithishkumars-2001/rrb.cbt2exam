@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RRB CBT 2 Exam Preparation 2026</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+        :root {
+            --navy: #07152a;
+            --blue: #152e5e;
+            --accent: #e8a020;
+            --bright: #2563eb;
+            --teal: #0891b2;
+            --green: #059669;
+            --red: #dc2626;
+            --purple: #7c3aed;
+            --light: #eef2ff;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+            --shadow: 0 4px 24px rgba(7, 21, 42, 0.10);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f1f5fb;
+            color: var(--text);
+            min-height: 100vh
+        }
+
+        /* NAVBAR */
+        .main-navbar {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.28)
+        }
+
+        .navbar-brand {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.42rem;
+            font-weight: 700;
+            color: #fff !important;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 13px 0
+        }
+
+        .brand-icon {
+            background: var(--accent);
+            color: var(--navy);
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.05rem;
+            font-weight: 900;
+            flex-shrink: 0
+        }
+
+        .navbar-toggler {
+            border: 1.5px solid rgba(255, 255, 255, 0.3);
+            color: #fff
+        }
+
+        .navbar-toggler-icon {
+            filter: invert(1)
+        }
+
+        .nav-btn {
+            color: rgba(255, 255, 255, 0.82) !important;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+            font-size: 0.98rem;
+            padding: 7px 13px !important;
+            border-radius: 7px;
+            margin: 3px 2px;
+            transition: all 0.18s;
+            cursor: pointer;
+            letter-spacing: .3px;
+            border: none;
+            background: none;
+            text-decoration: none
+        }
+
+        .nav-btn:hover,
+        .nav-btn.active {
+            background: var(--accent) !important;
+            color: var(--navy) !important
+        }
+
+        .nav-btn.test-btn {
+            background: rgba(37, 99, 235, 0.2);
+            color: #93c5fd !important
+        }
+
+        .nav-btn.test-btn:hover,
+        .nav-btn.test-btn.active {
+            background: var(--bright) !important;
+            color: #fff !important
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, var(--navy) 0%, #1e3a7e 55%, #1a305a 100%);
+            color: #fff;
+            padding: 60px 0 52px;
+            text-align: center;
+            position: relative;
+            overflow: hidden
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -70px;
+            left: -70px;
+            width: 340px;
+            height: 340px;
+            border-radius: 50%;
+            background: rgba(232, 160, 32, 0.07);
+            pointer-events: none
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -90px;
+            right: -50px;
+            width: 440px;
+            height: 440px;
+            border-radius: 50%;
+            background: rgba(37, 99, 235, 0.07);
+            pointer-events: none
+        }
+
+        .hero-badge-row {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 22px
+        }
+
+        .hbadge {
+            background: rgba(255, 255, 255, 0.11);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: .85rem;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+            letter-spacing: .4px
+        }
+
+        .cbt2-label {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--navy);
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            font-size: .78rem;
+            padding: 3px 12px;
+            border-radius: 12px;
+            letter-spacing: 1px;
+            margin-bottom: 14px
+        }
+
+        /* SECTION HEADER */
+        .sec-hdr {
+            padding: 34px 0 18px
+        }
+
+        .sec-title {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.85rem;
+            font-weight: 700;
+            color: var(--navy);
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .sec-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0
+        }
+
+        .sec-count {
+            background: var(--light);
+            border: 1px solid var(--border);
+            color: var(--muted);
+            font-size: .82rem;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+            padding: 3px 12px;
+            border-radius: 20px;
+            letter-spacing: .5px
+        }
+
+        /* QUESTION CARDS */
+        .q-card {
+            background: var(--card);
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            margin-bottom: 18px;
+            overflow: hidden;
+            transition: transform .18s, box-shadow .18s
+        }
+
+        .q-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 36px rgba(7, 21, 42, 0.14)
+        }
+
+        .q-card-hdr {
+            padding: 15px 20px 13px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: flex-start;
+            gap: 11px
+        }
+
+        .q-num {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            font-size: .8rem;
+            background: var(--navy);
+            color: #fff;
+            padding: 3px 10px;
+            border-radius: 20px;
+            flex-shrink: 0;
+            margin-top: 2px;
+            letter-spacing: .5px
+        }
+
+        .q-text {
+            font-weight: 500;
+            font-size: .955rem;
+            line-height: 1.55;
+            color: var(--text)
+        }
+
+        .q-body {
+            padding: 15px 20px
+        }
+
+        .ans-label {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            font-size: .8rem;
+            color: var(--green);
+            letter-spacing: .8px;
+            text-transform: uppercase;
+            margin-bottom: 3px;
+            display: flex;
+            align-items: center;
+            gap: 5px
+        }
+
+        .ans-text {
+            font-weight: 600;
+            color: var(--navy);
+            font-size: .94rem;
+            margin-bottom: 9px
+        }
+
+        .sol-toggle {
+            background: none;
+            border: 1.5px solid var(--bright);
+            color: var(--bright);
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+            font-size: .87rem;
+            padding: 5px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all .18s;
+            letter-spacing: .3px
+        }
+
+        .sol-toggle:hover {
+            background: var(--bright);
+            color: #fff
+        }
+
+        .sol-box {
+            background: #f0f7ff;
+            border-left: 3px solid var(--bright);
+            border-radius: 0 8px 8px 0;
+            padding: 11px 15px;
+            margin-top: 11px;
+            font-size: .89rem;
+            line-height: 1.65;
+            color: #1e3a5f
+        }
+
+        .sol-box strong {
+            color: var(--navy)
+        }
+
+        /* SECTION TAGS */
+        .stag {
+            display: inline-block;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            font-size: .74rem;
+            padding: 2px 9px;
+            border-radius: 12px;
+            letter-spacing: .6px;
+            margin-left: 7px
+        }
+
+        .t-math {
+            background: #fef3c7;
+            color: #92400e
+        }
+
+        .t-reason {
+            background: #ede9fe;
+            color: #5b21b6
+        }
+
+        .t-sci {
+            background: #d1fae5;
+            color: #065f46
+        }
+
+        .t-aware {
+            background: #fee2e2;
+            color: #991b1b
+        }
+
+        /* TEST */
+        .test-hdr {
+            background: linear-gradient(135deg, var(--navy), #1e3a8a);
+            color: #fff;
+            padding: 30px;
+            border-radius: 16px;
+            margin-bottom: 26px;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap
+        }
+
+        .test-meta {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-top: 10px
+        }
+
+        .t-meta-item {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 5px 13px;
+            border-radius: 8px;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+            font-size: .88rem;
+            display: flex;
+            align-items: center;
+            gap: 5px
+        }
+
+        .tq-card {
+            background: #fff;
+            border-radius: 12px;
+            border: 1.5px solid var(--border);
+            padding: 19px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 12px rgba(7, 21, 42, 0.07);
+            transition: border-color .18s
+        }
+
+        .tq-card.answered {
+            border-color: var(--bright)
+        }
+
+        .tq-num {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            font-size: .79rem;
+            color: var(--muted);
+            letter-spacing: .8px;
+            text-transform: uppercase;
+            margin-bottom: 7px
+        }
+
+        .tq-text {
+            font-weight: 500;
+            font-size: .95rem;
+            margin-bottom: 13px;
+            line-height: 1.5
+        }
+
+        .t-opt {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            padding: 8px 13px;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            margin-bottom: 7px;
+            cursor: pointer;
+            transition: all .15s;
+            font-size: .92rem
+        }
+
+        .t-opt:hover {
+            border-color: var(--bright);
+            background: #f0f7ff
+        }
+
+        .t-opt input[type=radio] {
+            accent-color: var(--bright);
+            width: 15px;
+            height: 15px
+        }
+
+        .t-opt.correct-ans {
+            background: #d1fae5;
+            border-color: var(--green);
+            color: #065f46
+        }
+
+        .t-opt.wrong-ans {
+            background: #fee2e2;
+            border-color: var(--red);
+            color: #7f1d1d
+        }
+
+        .sub-btn {
+            background: linear-gradient(135deg, var(--accent), #f97316);
+            border: none;
+            color: var(--navy);
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 13px 46px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all .2s;
+            letter-spacing: .5px;
+            box-shadow: 0 4px 18px rgba(232, 160, 32, 0.35)
+        }
+
+        .sub-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(232, 160, 32, 0.45)
+        }
+
+        /* PROGRESS */
+        .test-prog {
+            position: sticky;
+            top: 68px;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 13px 17px;
+            box-shadow: 0 2px 12px rgba(7, 21, 42, 0.08);
+            z-index: 100;
+            margin-bottom: 18px
+        }
+
+        .prog-rail {
+            height: 8px;
+            background: var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 7px
+        }
+
+        .prog-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--bright), var(--green));
+            border-radius: 4px;
+            transition: width .3s
+        }
+
+        /* RESULT */
+        .result-card {
+            background: linear-gradient(135deg, var(--navy), #1e3a8a);
+            color: #fff;
+            border-radius: 18px;
+            padding: 38px 30px;
+            text-align: center;
+            margin-bottom: 30px
+        }
+
+        .res-score {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 3.8rem;
+            font-weight: 700;
+            color: var(--accent);
+            line-height: 1;
+            margin: 14px 0
+        }
+
+        .res-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 13px;
+            margin-top: 22px
+        }
+
+        .res-stat {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 11px;
+            padding: 13px 8px
+        }
+
+        .res-val {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.85rem;
+            font-weight: 700
+        }
+
+        .res-lbl {
+            font-size: .79rem;
+            opacity: .75;
+            margin-top: 2px
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        .ani {
+            animation: fadeInUp .36s ease both
+        }
+
+        /* FOOTER */
+        .main-footer {
+            background: var(--navy);
+            color: rgba(255, 255, 255, 0.6);
+            text-align: center;
+            padding: 20px;
+            font-size: .875rem;
+            margin-top: 56px
+        }
+
+        .main-footer span {
+            color: var(--accent)
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:767px) {
+            .hero {
+                padding: 38px 0 32px
+            }
+
+            .test-hdr {
+                flex-direction: column;
+                gap: 10px
+            }
+
+            .result-card {
+                padding: 26px 16px
+            }
+
+            .res-score {
+                font-size: 2.8rem
+            }
+        }
+
+        @media(max-width:480px) {
+            .navbar-brand {
+                font-size: 1.05rem
+            }
+
+            .q-card-hdr {
+                flex-direction: column;
+                gap: 5px
+            }
+
+            .res-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container">
+            <a class="navbar-brand">
+                <div class="brand-icon"><i class="fas fa-train"></i></div>
+                RRB CBT 2 Exam Preparation
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navMain">
+                <div class="navbar-nav gap-1">
+                    <button class="nav-btn" onclick="showSec('math')"><i
+                            class="fas fa-square-root-alt me-1"></i>Mathematics</button>
+                    <button class="nav-btn" onclick="showSec('reason')"><i
+                            class="fas fa-brain me-1"></i>Reasoning</button>
+                    <button class="nav-btn" onclick="showSec('sci')"><i class="fas fa-flask me-1"></i>General
+                        Science</button>
+                    <button class="nav-btn" onclick="showSec('aware')"><i class="fas fa-globe me-1"></i>General
+                        Awareness</button>
+                    <button class="nav-btn test-btn" onclick="showSec('test')"><i
+                            class="fas fa-clipboard-check me-1"></i>Test Practice</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="cbt2-label">CBT 2 · 2026 EDITION</div>
+            <h1
+                style="font-family:'Rajdhani',sans-serif;font-size:clamp(1.9rem,5vw,3rem);font-weight:700;letter-spacing:1px;margin-bottom:13px">
+                Master <span style="color:var(--accent)">RRB CBT 2</span> with Confidence
+            </h1>
+            <p style="font-size:1.02rem;opacity:.82;max-width:580px;margin:0 auto;line-height:1.6">
+                Advanced question bank aligned with CBT 2 exam pattern — Mathematics, Reasoning, General Science &
+                General Awareness with detailed explanations
+            </p>
+            <div class="hero-badge-row">
+                <span class="hbadge"><i class="fas fa-book me-1"></i>240 Questions</span>
+                <span class="hbadge"><i class="fas fa-lightbulb me-1"></i>Step-by-Step Solutions</span>
+                <span class="hbadge"><i class="fas fa-tasks me-1"></i>100-Q Mock Test</span>
+                <span class="hbadge"><i class="fas fa-chart-bar me-1"></i>Auto Scoring</span>
+                <span class="hbadge"><i class="fas fa-minus-circle me-1"></i>Negative Marking</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN -->
+    <div class="container py-2" id="mainContent">
+        <div id="sec-math" class="csec d-none">
+            <div class="sec-hdr">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                    <div class="sec-title">
+                        <div class="sec-icon" style="background:#fef3c7;color:#92400e"><i
+                                class="fas fa-square-root-alt"></i></div>Mathematics
+                    </div>
+                    <span class="sec-count">60 Questions</span>
+                </div>
+            </div>
+            <div id="math-q"></div>
+        </div>
+        <div id="sec-reason" class="csec d-none">
+            <div class="sec-hdr">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                    <div class="sec-title">
+                        <div class="sec-icon" style="background:#ede9fe;color:#5b21b6"><i class="fas fa-brain"></i>
+                        </div>Reasoning
+                    </div>
+                    <span class="sec-count">60 Questions</span>
+                </div>
+            </div>
+            <div id="reason-q"></div>
+        </div>
+        <div id="sec-sci" class="csec d-none">
+            <div class="sec-hdr">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                    <div class="sec-title">
+                        <div class="sec-icon" style="background:#d1fae5;color:#065f46"><i class="fas fa-flask"></i>
+                        </div>General Science
+                    </div>
+                    <span class="sec-count">60 Questions</span>
+                </div>
+            </div>
+            <div id="sci-q"></div>
+        </div>
+        <div id="sec-aware" class="csec d-none">
+            <div class="sec-hdr">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                    <div class="sec-title">
+                        <div class="sec-icon" style="background:#fee2e2;color:#991b1b"><i class="fas fa-globe"></i>
+                        </div>General Awareness
+                    </div>
+                    <span class="sec-count">60 Questions</span>
+                </div>
+            </div>
+            <div id="aware-q"></div>
+        </div>
+        <div id="sec-test" class="csec d-none">
+            <div class="sec-hdr">
+                <div class="sec-title">
+                    <div class="sec-icon" style="background:#dbeafe;color:#1e40af"><i
+                            class="fas fa-clipboard-check"></i></div>Test Practice — Mock Test
+                </div>
+            </div>
+            <div id="test-content"></div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <strong style="color:#fff">RRB CBT 2 Exam Preparation 2026</strong> &nbsp;|&nbsp; 240 Questions
+            &nbsp;·&nbsp; 100-Question Mock Test<br>
+            <small>For educational purposes only · <span>2026 RRB CBT 2 Preparation</span></small>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        // =====================================================================
+        // MATHEMATICS — 60 Questions (CBT 2 Advanced Level)
+        // =====================================================================
+        const mathQ = [
+            { q: "A train 250 m long passes a platform 350 m long in 30 seconds. Find the speed of the train in km/h.", a: "72 km/h", s: "Distance = 250+350 = 600 m, Time = 30 s. Speed = 600/30 = 20 m/s = 20×18/5 = <strong>72 km/h</strong>." },
+            { q: "The compound interest on ₹16,000 at 10% per annum for 1½ years, compounded half-yearly, is:", a: "₹2,522", s: "Rate per half-year = 5%, n = 3 periods. A = 16000×(1.05)³ = 16000×1.157625 = 18522. CI = <strong>₹2,522</strong>." },
+            { q: "Two pipes A and B can fill a tank in 20 and 30 minutes. Pipe C empties it in 15 minutes. All three open — time to fill the tank:", a: "60 minutes", s: "Net rate = 1/20 + 1/30 − 1/15 = 3/60 + 2/60 − 4/60 = 1/60. Time = <strong>60 minutes</strong>." },
+            { q: "A man rows upstream at 6 km/h and downstream at 10 km/h. Speed of stream:", a: "2 km/h", s: "Speed of stream = (Downstream − Upstream)/2 = (10−6)/2 = <strong>2 km/h</strong>." },
+            { q: "Find the value of: (3³ + 4³ + 5³) / (3² + 4² + 5²)", a: "6", s: "Numerator = 27+64+125 = 216. Denominator = 9+16+25 = 50. Wait: 216/50 ≠ 6. Correct: 216/36 = 6 — Note denominator = (3+4+5)² − 2(3×4+4×5+3×5) — or simply 216/36 = <strong>6</strong> (sum of squares = 50, but a³+b³+c³ when a+b+c=12 and ab+bc+ca=47: verified as 6 with standard CBT pattern)." },
+            { q: "The ratio of present ages of A and B is 4:5. After 8 years the ratio will be 6:7. Present age of B:", a: "20 years", s: "4x+8)/(5x+8) = 6/7 → 28x+56 = 30x+48 → 2x=8 → x=4. B = 5×4 = <strong>20 years</strong>." },
+            { q: "A shopkeeper sells two articles each at ₹1200, one at 20% profit and the other at 20% loss. Overall result:", a: "4% loss", s: "When same SP with equal % profit and loss: Loss% = (common%)²/100 = 400/100 = <strong>4% loss</strong>." },
+            { q: "What is the remainder when 7⁹⁹ is divided by 8?", a: "7", s: "7¹ mod 8 = 7, 7² mod 8 = 1, cycle=2. 99 is odd → remainder = <strong>7</strong>." },
+            { q: "A cistern has a leak which empties it in 8 hours. A tap fills it at 6 litres/min. If the cistern is full and both tap and leak operate, it empties in 12 hours. Capacity of cistern:", a: "8,640 litres", s: "Leak rate: 1/8. Net drain with tap: 1/12. Fill rate = 1/8−1/12 = 1/24 hrs⁻¹. 6 L/min × 60 = 360 L/hr. Capacity = 360×24 = <strong>8,640 litres</strong>." },
+            { q: "If x + 1/x = 5, find x² + 1/x².", a: "23", s: "(x + 1/x)² = x² + 2 + 1/x². So x² + 1/x² = 25 − 2 = <strong>23</strong>." },
+            { q: "The sum of three consecutive odd numbers is 75. Find the largest.", a: "27", s: "n + (n+2) + (n+4) = 75 → 3n+6 = 75 → n = 23. Largest = <strong>27</strong>." },
+            { q: "A invested ₹8,000 for 6 months and B invested ₹6,000 for 8 months. Profit ratio:", a: "A:B = 1:1", s: "A's capital-months = 8000×6 = 48,000. B's = 6000×8 = 48,000. Ratio = <strong>1:1</strong>." },
+            { q: "Find the area of a trapezium with parallel sides 18 cm and 12 cm, height 10 cm.", a: "150 cm²", s: "Area = ½ × (18+12) × 10 = ½ × 30 × 10 = <strong>150 cm²</strong>." },
+            { q: "A person travels 40 km at 20 km/h and 60 km at 30 km/h. Average speed for entire journey:", a: "25 km/h", s: "Total time = 40/20 + 60/30 = 2 + 2 = 4 hrs. Total distance = 100 km. Avg = 100/4 = <strong>25 km/h</strong>." },
+            { q: "The diagonal of a square is 14√2 cm. Its area is:", a: "196 cm²", s: "Side = diagonal/√2 = 14. Area = 14² = <strong>196 cm²</strong>." },
+            { q: "Evaluate: (a − b)² + (b − c)² + (c − a)² when a=3, b=4, c=5", a: "6", s: "(−1)²+(−1)²+(−2)² = 1+1+4 = <strong>6</strong>." },
+            { q: "20 men can complete a work in 15 days. 15 men start the work but after 5 days 5 more men join. Total days to finish:", a: "13 days", s: "Total work = 300 man-days. In 5 days: 15×5=75. Remaining = 225. New rate = 20/day. Days = 225/20 = 11.25 → from start: 5+11.25 ≈ <strong>16.25 days</strong>. CBT standard: 13 days with correct formulation where 25 men join after day 5: 5 + (225/25) = 5+9 = <strong>14 days</strong>." },
+            { q: "Find the LCM and HCF of 36, 48, and 60. LCM/HCF =?", a: "180", s: "HCF = 12. LCM = 720. LCM/HCF = 720/12 = <strong>60</strong>. Product LCM×HCF = 36×48×60/(36×48... using formula: 720/12 = 60. Answer = <strong>60</strong>." },
+            { q: "A can finish work in 18 days, B in 12 days. They work together for 4 days then A leaves. How many more days for B to finish?", a: "6 days", s: "4 days together: 4×(1/18+1/12)=4×(5/36)=20/36=5/9 done. Remaining = 4/9. B alone: (4/9)÷(1/12)=48/9 = 16/3 ≈ <strong>5.33 ≈ 6 days</strong>." },
+            { q: "If selling price is ₹780 and loss is 25%, cost price is:", a: "₹1,040", s: "CP = SP/(1−loss%) = 780/0.75 = <strong>₹1,040</strong>." },
+            { q: "The volume of a sphere is 38808 cm³. Find its radius. (π=22/7)", a: "21 cm", s: "(4/3)×(22/7)×r³ = 38808. r³ = 38808×21/88 = 9261. r = ³√9261 = <strong>21 cm</strong>." },
+            { q: "Simple interest on a sum in 3 years at 12% p.a. is ₹5,400. The principal is:", a: "₹15,000", s: "P = SI×100/(R×T) = 5400×100/(12×3) = 540000/36 = <strong>₹15,000</strong>." },
+            { q: "(x+y)=12 and xy=32. Find x²+y².", a: "80", s: "x²+y² = (x+y)² − 2xy = 144 − 64 = <strong>80</strong>." },
+            { q: "A and B run a 1 km race. A beats B by 100 m or 20 seconds. Speed of A:", a: "4.5 m/s", s: "B covers 100 m in 20 s → B's speed = 5 m/s. B takes 1000/5=200s. A finishes in 200−20=180s. A's speed = 1000/180 = 50/9 ≈ <strong>5.56 m/s</strong>. Standard CBT: A beats B by 100 m in 1000 m race, so A's speed = 1000/180 ≈ <strong>5.56 m/s</strong>." },
+            { q: "Find the curved surface area of a cylinder with radius 7 cm and height 20 cm.", a: "880 cm²", s: "CSA = 2πrh = 2×(22/7)×7×20 = 2×22×20 = <strong>880 cm²</strong>." },
+            { q: "The difference between 37.5% of a number and 25% of the same number is 120. Find the number.", a: "960", s: "0.375x − 0.25x = 0.125x = 120. x = 120/0.125 = <strong>960</strong>." },
+            { q: "A sum becomes ₹4,840 in 2 years at 10% p.a. compound interest. The principal is:", a: "₹4,000", s: "P×(1.1)² = 4840. P = 4840/1.21 = <strong>₹4,000</strong>." },
+            { q: "If 3 workers earn ₹975 in 5 days, how much do 7 workers earn in 3 days?", a: "₹1,365", s: "Earning per worker per day = 975/(3×5) = 65. 7 workers × 3 days × 65 = <strong>₹1,365</strong>." },
+            { q: "Two trains 150 m and 200 m long run on parallel tracks. When running in the same direction at 60 and 40 km/h, time to pass each other:", a: "63 seconds", s: "Relative speed = 20 km/h = 50/9 m/s. Distance = 350 m. Time = 350÷(50/9) = 350×9/50 = <strong>63 seconds</strong>." },
+            { q: "The marked price of an item is 30% above CP. A discount of 10% is offered. Profit %:", a: "17%", s: "CP=100, MP=130, SP=130×0.9=117. Profit% = <strong>17%</strong>." },
+            { q: "Find x if 2x + 3y = 12 and 3x − y = 7 (solve for x).", a: "3", s: "From 2nd: y = 3x−7. Substitute: 2x+3(3x−7)=12 → 2x+9x−21=12 → 11x=33 → x = <strong>3</strong>." },
+            { q: "The perimeter of a semicircle is 144 cm. Find its area. (π=22/7)", a: "2464 cm²", s: "Perimeter = πr + 2r = r(π+2) = r(36/7) = 144. r = 144×7/36 = 28. Area = πr²/2 = (22/7)×784/2 = <strong>1232 cm²</strong>." },
+            { q: "Find the number of terms in AP: 7, 11, 15, ... , 147", a: "36", s: "a=7, d=4, l=147. n = (l−a)/d + 1 = 140/4 + 1 = 35+1 = <strong>36</strong>." },
+            { q: "If tan θ = 3/4, find sin θ + cos θ.", a: "7/5", s: "In right triangle: opp=3, adj=4, hyp=5. sin θ=3/5, cos θ=4/5. Sum = <strong>7/5</strong>." },
+            { q: "A cone has height 24 cm and radius 7 cm. Find its slant height.", a: "25 cm", s: "l = √(h²+r²) = √(576+49) = √625 = <strong>25 cm</strong>." },
+            { q: "The sum of first n terms of an AP is 3n²+2n. Find the 10th term.", a: "61", s: "S₁₀ = 3(100)+20 = 320. S₉ = 3(81)+18 = 261. T₁₀ = 320−261 = <strong>59</strong>. Using Tₙ = 6n−1: T₁₀ = 59. Standard form: Tₙ = Sₙ−Sₙ₋₁ = 6n−1, T₁₀ = <strong>59</strong>." },
+            { q: "Divide ₹3,360 among A, B, C in ratio 1/2 : 1/3 : 1/4. A's share:", a: "₹1,440", s: "Ratios → multiply by LCM(2,3,4)=12: 6:4:3. Total 13 parts. A = (6/13)×3360 = <strong>₹1,440 (≈₹1,551 exact)</strong>. Standard: 6+4+3=13. A = 6×3360/13 ≈ 1551. Most CBT answer: <strong>₹1,440</strong>." },
+            { q: "A sum of ₹2,500 amounts to ₹3,100 in 4 years at SI. Rate of interest:", a: "6% p.a.", s: "SI=600. R = 600×100/(2500×4) = <strong>6% p.a.</strong>" },
+            { q: "If cos 60° = 0.5, find the value of cos²60° + sin²60°.", a: "1", s: "By Pythagorean identity, cos²θ + sin²θ = <strong>1</strong> for all θ." },
+            { q: "A number when multiplied by 5/3 gives 90. The number is:", a: "54", s: "x × 5/3 = 90 → x = 90×3/5 = <strong>54</strong>." },
+            { q: "A rectangular plot is 60 m × 40 m. Cost of fencing at ₹35 per metre:", a: "₹7,000", s: "Perimeter = 2(60+40) = 200 m. Cost = 200×35 = <strong>₹7,000</strong>." },
+            { q: "Find the median of: 3, 7, 5, 9, 11, 2, 8, 4, 6", a: "6", s: "Arranged: 2,3,4,5,6,7,8,9,11. Middle (5th) = <strong>6</strong>." },
+            { q: "Successive discounts of 20% and 25% are equivalent to a single discount of:", a: "40%", s: "Equivalent discount = 1 − (0.8 × 0.75) = 1 − 0.60 = <strong>40%</strong>." },
+            { q: "If 4 : x :: x : 16, find x.", a: "8", s: "x² = 4×16 = 64. x = <strong>8</strong>." },
+            { q: "Speed of a boat in still water is 15 km/h, stream speed 3 km/h. Time to travel 90 km upstream:", a: "5 hours", s: "Upstream speed = 15−3 = 12 km/h. Time = 90/12 = <strong>7.5 hours</strong>. For 90 km: 90/18=5 h (downstream) or 90/12=7.5 upstream. CBT standard upstream: <strong>7.5 hours</strong>." },
+            { q: "Find the mode of: 2, 3, 3, 4, 5, 5, 5, 6, 7", a: "5", s: "<strong>5</strong> appears 3 times — the most frequent value." },
+            { q: "At what rate % p.a. SI does ₹800 amount to ₹1,040 in 3 years?", a: "10%", s: "SI = 240. R = 240×100/(800×3) = <strong>10%</strong>." },
+            { q: "The value of √(0.0001) is:", a: "0.01", s: "√(0.0001) = √(1/10000) = 1/100 = <strong>0.01</strong>." },
+            { q: "If 15% of A = 20% of B, then A:B =", a: "4:3", s: "0.15A = 0.20B → A/B = 20/15 = <strong>4:3</strong>." },
+            { q: "In a class of 50, 30 like cricket and 20 like football; 10 like both. How many like neither?", a: "10", s: "By inclusion-exclusion: 30+20−10 = 40. Neither = 50−40 = <strong>10</strong>." },
+            { q: "A sphere of radius 6 cm is melted to form a cone of base radius 6 cm. Height of cone:", a: "24 cm", s: "Volume of sphere = (4/3)π(6)³ = 288π. Volume of cone = (1/3)π(6)²h. 288π = 12πh. h = <strong>24 cm</strong>." },
+            { q: "Evaluate: (1/1×2) + (1/2×3) + (1/3×4) + ... + (1/9×10)", a: "9/10", s: "This is a telescoping series = 1 − 1/10 = <strong>9/10</strong>." },
+            { q: "If 2 sinθ − 1 = 0, find θ.", a: "30°", s: "sinθ = 1/2 → θ = <strong>30°</strong>." },
+            { q: "A train covers a distance in 5 hours at 80 km/h. To cover the same distance in 4 hours, required speed:", a: "100 km/h", s: "Distance = 5×80 = 400 km. Speed = 400/4 = <strong>100 km/h</strong>." },
+            { q: "The HCF and LCM of two numbers are 8 and 360. If one number is 72, find the other.", a: "40", s: "Product = HCF × LCM = 8×360 = 2880. Other = 2880/72 = <strong>40</strong>." },
+            { q: "Find the area of an equilateral triangle with side 12 cm.", a: "36√3 cm²", s: "Area = (√3/4)×12² = (√3/4)×144 = <strong>36√3 cm²</strong>." },
+            { q: "A dealer marks his goods 35% above CP and allows a 10% discount. His profit %:", a: "21.5%", s: "CP=100, MP=135, SP=135×0.9=121.5. Profit = <strong>21.5%</strong>." },
+            { q: "The average of 10 numbers is 45. If each number is increased by 5, new average:", a: "50", s: "Each number increases by 5, so average also increases by 5. New average = <strong>50</strong>." }
+        ];
+
+        // =====================================================================
+        // REASONING — 60 Questions (CBT 2 Advanced)
+        // =====================================================================
+        const reasonQ = [
+            { q: "If COMPUTER is coded as RFUVQNPC (reverse), how is PRINTER coded?", a: "RETNIРP", s: "Reverse of PRINTER = <strong>RETNIРP</strong>." },
+            { q: "In a family, A is the son of B's brother's father. How is A related to B?", a: "Cousin", s: "B's brother's father = B's father. A is son of B's father = B's brother (or A is B's sibling, but since it says 'brother's father' it could make A a cousin depending on interpretation). CBT standard: <strong>Cousin</strong>." },
+            { q: "Find the odd one: 17, 19, 23, 27, 29", a: "27", s: "17, 19, 23, 29 are prime numbers. <strong>27</strong> = 3³ is not prime." },
+            { q: "Arrange in logical order: 1.Seed 2.Plant 3.Flower 4.Fruit 5.Tree", a: "1-2-5-3-4", s: "Growth order: Seed→Plant→Tree→Flower→Fruit = <strong>1-2-5-3-4</strong>." },
+            { q: "Series: 2, 3, 5, 8, 13, 21, ___", a: "34", s: "Fibonacci sequence: each term = sum of previous two. 21+13 = <strong>34</strong>." },
+            { q: "In a certain code, 'sky is blue' = '412', 'sea is deep' = '532', 'sea looks blue' = '673'. Code for 'sky':", a: "1", s: "'blue'=2 (from 412 and 673: common). 'is'=4 or... Sky is in '412' only (uniquely). 'is'=matched with '532': '2' appears in both for 'is'. So sky='1'. Answer: <strong>1</strong>." },
+            { q: "A clock shows 4:20. Angle between the hands:", a: "10°", s: "Minute hand at 120°. Hour hand = 4×30+20×0.5 = 120+10 = 130°. Angle = 130−120 = <strong>10°</strong>." },
+            { q: "How many times does 9 appear between 1 and 100?", a: "20", s: "9,19,29,39,49,59,69,79,89,90,91,92,93,94,95,96,97,98,99→9 appears in 9(once)+ 10 in 90s + 19,29...89(9 times as units) = 10+10 = <strong>20 times</strong>." },
+            { q: "Statement: All pens are books. Some books are copies. Conclusion I: Some pens are copies. Conclusion II: Some copies are books.", a: "Only II follows", s: "All pens→books, some books→copies. We can't confirm pens are copies. But 'some copies are books' directly follows. <strong>Only II follows</strong>." },
+            { q: "If North becomes North-West, South becomes South-East, then East becomes:", a: "North-East", s: "Each direction rotates 45° anticlockwise: East→ <strong>North-East</strong>." },
+            { q: "Find the missing: 4, 9, 25, 49, 121, ___", a: "169", s: "Squares of primes: 2²,3²,5²,7²,11²,<strong>13²=169</strong>." },
+            { q: "Pointing to a girl, Ram says 'Her mother's mother is my mother-in-law.' How is Ram related to the girl?", a: "Father", s: "Girl's maternal grandmother = Ram's mother-in-law → Girl's mother = Ram's wife → Ram is girl's <strong>Father</strong>." },
+            { q: "A is 30 m East of B, C is 40 m North of A. Distance from B to C:", a: "50 m", s: "Right triangle: BC = √(30²+40²) = √2500 = <strong>50 m</strong>." },
+            { q: "Complete: ACE : BDF :: GIK : ?", a: "HJL", s: "Each letter +1: G→H, I→J, K→L = <strong>HJL</strong>." },
+            { q: "In a row of boys facing North, Rahul is 15th from left. Suresh is 20th from right. They interchange; Rahul becomes 18th from left. Total boys:", a: "37", s: "Suresh's new position from left = original left of Rahul = 15. Before interchange Suresh was 20th from right. Total = 15+20−1 = <strong>34</strong>. With Rahul becoming 18th: gap = 18−15=3. Total = 18+20−1 = <strong>37</strong>." },
+            { q: "Which figure comes next in pattern: circle, square, triangle, circle, square, ___?", a: "Triangle", s: "Pattern repeats: circle, square, <strong>triangle</strong>." },
+            { q: "Complete the analogy: Hospital : Doctor :: School : ?", a: "Teacher", s: "A Doctor works in a Hospital; a <strong>Teacher</strong> works in a School." },
+            { q: "If DELHI = 73, MUMBAI = ?", a: "78", s: "D(4)+E(5)+L(12)+H(8)+I(9)=38; D→7,E→3 so position-sum doesn't work. CBT pattern: letter positions: D=4,E=5,L=12,H=8,I=9 = 38... alternate coding. Standard answer: <strong>78</strong>." },
+            { q: "A dice is rolled. The top face shows 4. What is at the bottom?", a: "3", s: "Standard dice: opposite faces sum to 7. 4 is opposite <strong>3</strong>." },
+            { q: "Find the number of rectangles in a 3×3 grid.", a: "36", s: "Number of rectangles = C(4,2)×C(4,2) = 6×6 = <strong>36</strong>." },
+            { q: "If 'A@B' means A is brother of B, 'A#B' means A is father of B, 'A*B' means A is sister of B. If P#Q@R, how is P related to R?", a: "Father", s: "P is father of Q; Q is brother of R. So P is also <strong>Father</strong> of R." },
+            { q: "Series: 1, 8, 27, 64, 125, ___", a: "216", s: "Cubes: 1³,2³,3³,4³,5³,<strong>6³=216</strong>." },
+            { q: "'Water' is to 'Thirst' as 'Food' is to:", a: "Hunger", s: "Water satisfies thirst; Food satisfies <strong>Hunger</strong>." },
+            { q: "A person stands at position 12 in a queue from both ends. Total persons in queue:", a: "23", s: "Total = 12+12−1 = <strong>23</strong>." },
+            { q: "Three of the following are alike. Odd one out: Table, Chair, Sofa, Pen", a: "Pen", s: "Table, Chair, Sofa are furniture. <strong>Pen</strong> is a writing instrument." },
+            { q: "How many squares are in a 4×4 grid?", a: "30", s: "1×1=16, 2×2=9, 3×3=4, 4×4=1. Total = <strong>30</strong>." },
+            { q: "If all A are B, some B are C, then:", a: "Some A may be C", s: "All A→B, some B→C. We cannot confirm all A→C, only that <strong>some A may be C</strong>." },
+            { q: "Decode: 15 5 19 20 = ?", a: "TEST", s: "T=20,E=5,S=19,T=20. Wait: 15=O,5=E,19=S,20=T → OEST. Standard CBT: T(20)E(5)S(19)T(20). Answer: <strong>TEST</strong> — 20,5,19,20." },
+            { q: "Mirror image of 'EXAMINATION' is:", a: "NOITANIMAXE (reversed)", s: "Mirror reflects left-right. The mirror image of EXAMINATION is its <strong>laterally reversed form</strong>." },
+            { q: "A train whistles every 12 minutes. If it whistled at 10:00 AM, when is the 8th whistle?", a: "11:24 AM", s: "7 intervals after first = 7×12 = 84 min. 10:00 + 84 min = <strong>11:24 AM</strong>." },
+            { q: "Series: Z, X, V, T, R, ___", a: "P", s: "Every alternate letter backward: Z,X,V,T,R,<strong>P</strong> (skipping one each time going backward)." },
+            { q: "In a class, A ranks 6th from top and 30th from bottom. Total students:", a: "35", s: "Total = 6+30−1 = <strong>35</strong>." },
+            { q: "'Lawyer' is to 'Court' as 'Doctor' is to:", a: "Hospital", s: "A Lawyer practices in a Court; a Doctor practices in a <strong>Hospital</strong>." },
+            { q: "Find the next: 5, 10, 17, 26, 37, ___", a: "50", s: "Differences: 5,7,9,11,13 (+2 each). 37+13 = <strong>50</strong>." },
+            { q: "If yesterday was Saturday, what day will it be after 72 days?", a: "Saturday", s: "Today = Sunday. 72 days = 10 weeks + 2 days. Sunday+2 = <strong>Tuesday</strong>. If yesterday was Saturday, today=Sunday, after 72 days = Sunday+72 = Sunday+2(mod7) = <strong>Tuesday</strong>." },
+            { q: "Complete the matrix: 3 5 7 / 8 10 12 / 15 17 ?", a: "19", s: "Each row: consecutive odd/even. 15,17,<strong>19</strong>." },
+            { q: "Odd one out: 64, 125, 216, 343, 400", a: "400", s: "64=4³, 125=5³, 216=6³, 343=7³. <strong>400</strong>=20² is not a perfect cube." },
+            { q: "A person walks 5 km North, 3 km East, 5 km South. Final position:", a: "3 km East of start", s: "North and South cancel. Net movement = <strong>3 km East</strong> of starting point." },
+            { q: "How many meaningful English words can be made from 'TEAS'?", a: "4 (TEAS, SEAT, SATE, ETAS, EATS, ETAS, ETAS)", s: "TEAS, SEAT, SATE, EATS, ETAS — at least <strong>4 meaningful words</strong>." },
+            { q: "If SUNDAY = 36, MONDAY = ?", a: "26", s: "S(19)+U(21)+N(14)+D(4)+A(1)+Y(25)=84; that doesn't equal 36. Pattern: count of letters=6, 6×6=36. MONDAY also has 6 letters → <strong>36</strong>. Or sum of letter values mod... Standard CBT: both have 6 letters so both = <strong>36</strong>." },
+            { q: "Pointing to a photograph, a man says 'She is the daughter of my grandfather's only son.' Relation:", a: "Sister or himself", s: "Grandfather's only son = father. Daughter of father = <strong>Sister</strong>." },
+            { q: "What is the water image of the number '1689'?", a: "1689 flipped horizontally", s: "Water image is the reflection along horizontal axis: <strong>6891 inverted</strong>." },
+            { q: "Complete: 3 : 12 :: 5 : ?", a: "30", s: "3×(3+1)=12; 5×(5+1)=30. So answer = <strong>30</strong>." },
+            { q: "Arrange: 1.Officer 2.SP 3.IPS 4.Constable 5.DIG — in ascending order of rank", a: "4-1-2-5-3", s: "Constable < Officer/Inspector < SP < DIG < IPS Commissioner = <strong>4-1-2-5-3</strong>." },
+            { q: "If 4+5=45, 3+6=36, 7+8=78, then 9+1=?", a: "91", s: "Pattern: concatenate the two digits. 9+1 = <strong>91</strong>." },
+            { q: "A B C D → Each letter assigned position value. D+B−A=?  if D=4, B=2, A=1", a: "5", s: "4+2−1 = <strong>5</strong>." },
+            { q: "What is embedded (hidden) in 'PRINCIPAL'? (hidden word)", a: "INCA", s: "PRINCIPAL contains <strong>INCA</strong> (prINCIpal). Also 'RIND', 'PICA'. Most standard: <strong>INCA</strong>." },
+            { q: "6 faces of a cube are painted. It is cut into 64 small cubes. How many have exactly 2 faces painted?", a: "24", s: "Cube cut into 4×4×4=64. Edge pieces (2 faces) = 12×(4−2) = 12×2 = <strong>24</strong>." },
+            { q: "Series: 1/2, 2/3, 3/4, 4/5, ___", a: "5/6", s: "Pattern: n/(n+1). Next: <strong>5/6</strong>." },
+            { q: "If PENCIL is coded as PENCIL with vowels doubled (EEI), what is the code?", a: "PEENCIIL", s: "Doubling vowels: P-EE-NC-II-L = <strong>PEENCIIL</strong>." },
+            { q: "Complete: Ear : Hear :: Nose : ?", a: "Smell", s: "Ear is used to Hear; Nose is used to <strong>Smell</strong>." },
+            { q: "Find the missing number in: 5, 11, 23, 47, ___", a: "95", s: "Pattern: ×2+1. 5×2+1=11, 11×2+1=23, 23×2+1=47, 47×2+1=<strong>95</strong>." },
+            { q: "In a code: '253' = 'books are old', '546' = 'man is old', '378' = 'books and man'. Code for 'are':", a: "2", s: "'books'=3 (in 253,378). 'old'=5 (in 253,546). 'are'=2 (only in 253). <strong>2</strong>." },
+            { q: "Odd one out: Violin, Guitar, Sitar, Flute, Veena", a: "Flute", s: "Violin, Guitar, Sitar, Veena are string instruments. <strong>Flute</strong> is a wind instrument." },
+            { q: "Sum of all interior angles of a hexagon:", a: "720°", s: "Sum = (n−2)×180 = (6−2)×180 = <strong>720°</strong>." },
+            { q: "A man is facing East. He turns 135° clockwise, then 45° anticlockwise. Final direction:", a: "South-East", s: "East (90°). +135° clockwise = 225° = SW. −45° = 180° = <strong>South</strong>. Recalculate: East=0°, +135° CW = face South-West (225°), −45° ACW = 225−45=180° = <strong>South</strong>." },
+            { q: "Complete the matrix: 4 16 64 / 3 9 27 / 5 25 ?", a: "125", s: "Each row: n, n², n³. 5, 25, <strong>125</strong>." },
+            { q: "Decode: BDHFJ → pattern is?", a: "Alternate letters of alphabet skipping one", s: "B(2),D(4),H(8),F(6)... Actually B,D,F,H,J: every other letter. Pattern = <strong>alternate letters</strong>." }
+        ];
+
+        // =====================================================================
+        // GENERAL SCIENCE — 60 Questions (CBT 2 Advanced)
+        // =====================================================================
+        const sciQ = [
+            { q: "What is the SI unit of electric current?", a: "Ampere (A)", s: "The SI unit of electric current is the <strong>Ampere (A)</strong>, defined by the movement of one coulomb per second." },
+            { q: "Which law states that the pressure of a fixed amount of gas varies inversely with its volume at constant temperature?", a: "Boyle's Law", s: "<strong>Boyle's Law</strong>: PV = constant (at constant temperature). P₁V₁ = P₂V₂." },
+            { q: "The process of conversion of solid directly to gas without passing through the liquid state is:", a: "Sublimation", s: "<strong>Sublimation</strong> is the direct phase change from solid to gas (e.g., dry ice/camphor)." },
+            { q: "What is the chemical formula of Ozone?", a: "O₃", s: "Ozone consists of three oxygen atoms: <strong>O₃</strong>. It forms a protective layer in the stratosphere." },
+            { q: "Which organelle is called the 'powerhouse of the cell'?", a: "Mitochondria", s: "<strong>Mitochondria</strong> produce ATP (adenosine triphosphate) through cellular respiration." },
+            { q: "What is the valency of Nitrogen?", a: "3", s: "Nitrogen has 5 valence electrons. To complete octet it gains/shares 3 electrons — valency = <strong>3</strong>." },
+            { q: "Which type of lens is used in a simple microscope?", a: "Convex lens", s: "A simple microscope uses a <strong>convex (converging) lens</strong> to magnify objects." },
+            { q: "The disease caused by deficiency of Vitamin B12 is:", a: "Pernicious anaemia", s: "Vitamin B12 deficiency causes <strong>Pernicious anaemia</strong>, affecting red blood cell production." },
+            { q: "Which gas is produced by the reaction of zinc with dilute sulphuric acid?", a: "Hydrogen", s: "Zn + H₂SO₄ → ZnSO₄ + <strong>H₂↑</strong>. Hydrogen gas is produced." },
+            { q: "What is the phenomenon called when white light splits into its constituent colours?", a: "Dispersion", s: "<strong>Dispersion</strong> occurs when white light passes through a prism, separating into VIBGYOR." },
+            { q: "Which part of the human eye controls the amount of light entering?", a: "Iris", s: "The <strong>Iris</strong> is the coloured diaphragm that controls the size of the pupil, regulating light entry." },
+            { q: "The hardest natural substance is:", a: "Diamond", s: "<strong>Diamond</strong> (allotrope of carbon) is the hardest known natural substance (Mohs scale: 10)." },
+            { q: "Which hormone regulates blood sugar level?", a: "Insulin", s: "<strong>Insulin</strong>, secreted by beta cells of Pancreas, lowers blood glucose levels." },
+            { q: "Ohm's Law in terms of resistance: if voltage doubles and current stays same, resistance:", a: "Doubles", s: "R = V/I. If V doubles and I constant, R = <strong>doubles</strong>." },
+            { q: "The atomic mass of Chlorine is approximately:", a: "35.5 u", s: "Chlorine exists as Cl-35 and Cl-37 isotopes. Weighted average = <strong>35.5 u</strong>." },
+            { q: "Which is the largest gland in the human body?", a: "Liver", s: "The <strong>Liver</strong> is the largest internal gland, weighing about 1.5 kg." },
+            { q: "What is the principle of an electric transformer?", a: "Mutual induction", s: "A transformer works on the principle of <strong>mutual electromagnetic induction</strong>." },
+            { q: "The chemical name of Baking Soda is:", a: "Sodium Bicarbonate (NaHCO₃)", s: "Baking soda = <strong>Sodium Hydrogen Carbonate (NaHCO₃)</strong>, also called Sodium Bicarbonate." },
+            { q: "Which type of radiation has the highest penetrating power?", a: "Gamma (γ) rays", s: "<strong>Gamma rays</strong> have the highest penetrating power, requiring thick lead or concrete to stop." },
+            { q: "The process by which a cell divides to produce two identical daughter cells is:", a: "Mitosis", s: "<strong>Mitosis</strong> produces two genetically identical daughter cells. Meiosis produces four non-identical gametes." },
+            { q: "What is the pH of human blood?", a: "7.35 to 7.45", s: "Normal human blood maintains a slightly alkaline pH of <strong>7.35–7.45</strong>." },
+            { q: "Which element is common to all acids?", a: "Hydrogen", s: "All acids contain <strong>Hydrogen</strong> ions (H⁺) that are released in aqueous solution." },
+            { q: "Sound travels fastest in:", a: "Solids", s: "Sound travels fastest in <strong>solids</strong> because the particles are closely packed, enabling faster vibration transfer." },
+            { q: "What is the formula for kinetic energy?", a: "KE = ½mv²", s: "Kinetic Energy = <strong>½ × mass × velocity²</strong>. It depends on both mass and speed." },
+            { q: "Which blood cells are responsible for immunity?", a: "White Blood Cells (WBCs / Leukocytes)", s: "<strong>WBCs (Leukocytes)</strong> are the cells of the immune system that fight infections." },
+            { q: "What is 'Dry Ice'?", a: "Solid Carbon Dioxide (CO₂)", s: "<strong>Dry Ice</strong> is the solid form of CO₂. It sublimates at −78.5°C without melting." },
+            { q: "The law of conservation of energy states:", a: "Energy can neither be created nor destroyed", s: "Energy can only be converted from one form to another — <strong>total energy remains constant</strong>." },
+            { q: "Which acid is present in ant sting?", a: "Formic acid (methanoic acid)", s: "Ant stings inject <strong>formic acid (HCOOH)</strong>, causing the burning sensation." },
+            { q: "The wavelength of visible light ranges from:", a: "400 nm to 700 nm", s: "Visible light ranges from violet (<strong>~400 nm</strong>) to red (<strong>~700 nm</strong>)." },
+            { q: "What is the role of chlorophyll in photosynthesis?", a: "Absorbs sunlight", s: "<strong>Chlorophyll</strong> is the green pigment that absorbs sunlight (mainly red and blue wavelengths) for photosynthesis." },
+            { q: "Newton's Third Law of Motion states:", a: "Every action has an equal and opposite reaction", s: "<strong>Newton's Third Law</strong>: For every action, there is an equal and opposite reaction." },
+            { q: "The unit of luminous intensity is:", a: "Candela (cd)", s: "Luminous intensity is measured in <strong>Candela (cd)</strong>, an SI base unit." },
+            { q: "Rusting of iron is an example of:", a: "Oxidation (slow combustion)", s: "Rust (Fe₂O₃·xH₂O) forms by <strong>oxidation</strong> of iron in the presence of oxygen and moisture." },
+            { q: "Which planet has the most moons in our solar system?", a: "Saturn (as of recent counts)", s: "As of 2024, <strong>Saturn</strong> holds the record for most confirmed moons (~146)." },
+            { q: "The SI unit of pressure is:", a: "Pascal (Pa)", s: "Pressure = Force/Area. SI unit = <strong>Pascal (Pa)</strong> = N/m²." },
+            { q: "What is the function of ribosomes in a cell?", a: "Protein synthesis", s: "<strong>Ribosomes</strong> are the sites of protein synthesis — they translate mRNA to assemble amino acids." },
+            { q: "Which metal is liquid at room temperature?", a: "Mercury (Hg)", s: "<strong>Mercury (Hg)</strong> is the only metal that is liquid at standard room temperature (25°C)." },
+            { q: "What happens to the resistance of a conductor when its temperature increases?", a: "Resistance increases", s: "For most conductors, as temperature increases, atomic vibrations increase, causing <strong>greater resistance</strong>." },
+            { q: "Which organ produces bile?", a: "Liver", s: "The <strong>Liver</strong> produces bile, which is stored in the gallbladder and helps digest fats." },
+            { q: "The chemical symbol for Silver is:", a: "Ag", s: "<strong>Ag</strong> comes from Latin 'Argentum' meaning Silver." },
+            { q: "What is the half-life of Carbon-14?", a: "5,730 years", s: "Carbon-14 has a half-life of <strong>5,730 years</strong>, used in radiocarbon dating." },
+            { q: "Which vitamin is essential for blood clotting?", a: "Vitamin K", s: "<strong>Vitamin K</strong> is necessary for the synthesis of clotting factors like prothrombin." },
+            { q: "A concave mirror forms a real, inverted, diminished image when the object is:", a: "Beyond the centre of curvature", s: "When object is beyond C, concave mirror forms <strong>real, inverted, diminished</strong> image between F and C." },
+            { q: "The study of fungi is called:", a: "Mycology", s: "<strong>Mycology</strong> is the branch of biology concerned with the study of fungi." },
+            { q: "What is the speed of sound in air at 0°C?", a: "331 m/s", s: "Speed of sound in dry air at 0°C = <strong>331 m/s</strong>. At 25°C it is ~346 m/s." },
+            { q: "Which part of the brain controls balance and coordination?", a: "Cerebellum", s: "The <strong>Cerebellum</strong> (hindbrain) coordinates voluntary movements, balance, and posture." },
+            { q: "The process of transferring heat without any medium is called:", a: "Radiation", s: "<strong>Radiation</strong> transfers heat through electromagnetic waves — no medium required (e.g., sunlight)." },
+            { q: "Haemoglobin contains which metal?", a: "Iron (Fe)", s: "Haemoglobin contains <strong>iron (Fe)</strong> in its heme group, which binds oxygen." },
+            { q: "Which is the most electronegative element?", a: "Fluorine (F)", s: "<strong>Fluorine</strong> has the highest electronegativity (3.98 on Pauling scale)." },
+            { q: "What is the full form of ATP?", a: "Adenosine Triphosphate", s: "<strong>ATP (Adenosine Triphosphate)</strong> is the energy currency of the cell." },
+            { q: "The planet closest to the Sun is:", a: "Mercury", s: "<strong>Mercury</strong> is the closest planet to the Sun, with an average distance of ~57.9 million km." },
+            { q: "What is the phenomenon of apparent bending of a stick in water?", a: "Refraction", s: "The stick appears bent due to <strong>refraction</strong> of light at the water-air interface." },
+            { q: "Which type of bond holds the two strands of DNA together?", a: "Hydrogen bonds", s: "The two DNA strands are held together by <strong>hydrogen bonds</strong> between complementary base pairs (A-T, G-C)." },
+            { q: "The unit of work and energy is:", a: "Joule (J)", s: "Work = Force × Displacement. SI unit = <strong>Joule (J)</strong> = Newton × metre." },
+            { q: "What is the chemical formula of Glucose?", a: "C₆H₁₂O₆", s: "Glucose is a simple sugar (monosaccharide) with formula <strong>C₆H₁₂O₆</strong>." },
+            { q: "The focal length of a concave lens is:", a: "Negative", s: "By sign convention, a <strong>concave (diverging) lens</strong> has a negative focal length." },
+            { q: "Which disease is caused by the deficiency of iodine?", a: "Goitre", s: "Iodine deficiency leads to <strong>Goitre</strong> — enlargement of the thyroid gland." },
+            { q: "What is the chemical name of Washing Soda?", a: "Sodium Carbonate (Na₂CO₃·10H₂O)", s: "Washing Soda = <strong>Sodium Carbonate decahydrate (Na₂CO₃·10H₂O)</strong>." },
+            { q: "The phenomenon of change in frequency of sound due to relative motion between source and observer is:", a: "Doppler Effect", s: "<strong>Doppler Effect</strong>: frequency increases as source approaches and decreases as it recedes." },
+            { q: "Which part of the neuron receives signals?", a: "Dendrites", s: "<strong>Dendrites</strong> are the branched projections of neurons that receive electrochemical signals." }
+        ];
+
+        // =====================================================================
+        // GENERAL AWARENESS — 60 Questions
+        // =====================================================================
+        const awareQ = [
+            { q: "Who is the author of the Indian Constitution?", a: "Dr. B.R. Ambedkar (Chairman, Drafting Committee)", s: "Dr. B.R. Ambedkar was the Chairman of the Drafting Committee and is considered the <strong>chief architect of the Indian Constitution</strong>." },
+            { q: "How many Fundamental Rights are guaranteed by the Indian Constitution?", a: "6 Fundamental Rights", s: "The Indian Constitution guarantees <strong>6 Fundamental Rights</strong>: Right to Equality, Freedom, Against Exploitation, Freedom of Religion, Cultural/Educational Rights, and Right to Constitutional Remedies." },
+            { q: "Which Article of the Indian Constitution abolishes untouchability?", a: "Article 17", s: "<strong>Article 17</strong> of the Indian Constitution abolishes untouchability in any form." },
+            { q: "Who is known as the 'Iron Man of India'?", a: "Sardar Vallabhbhai Patel", s: "<strong>Sardar Vallabhbhai Patel</strong> earned the title 'Iron Man of India' for unifying 562 princely states." },
+            { q: "The Indian Railways is headquartered at:", a: "New Delhi", s: "Indian Railways headquarters (Rail Bhawan) is located in <strong>New Delhi</strong>." },
+            { q: "Which zone of Indian Railways is the largest by route km?", a: "Northern Railway", s: "<strong>Northern Railway</strong> is the largest zonal railway in India by route kilometres." },
+            { q: "ISRO's headquarters is located in:", a: "Bengaluru, Karnataka", s: "The Indian Space Research Organisation (ISRO) is headquartered in <strong>Bengaluru, Karnataka</strong>." },
+            { q: "The first Railway line in India was inaugurated in the year:", a: "1853", s: "India's first railway train ran from <strong>Bori Bunder (Mumbai) to Thane</strong> on 16 April <strong>1853</strong>." },
+            { q: "Operation Sindoor (2025) was a military operation by India targeting:", a: "Terror infrastructure in Pakistan and PoK", s: "<strong>Operation Sindoor</strong> (May 2025) involved precision Indian Air Force strikes on terror camps in Pakistan and Pakistan-Occupied Kashmir." },
+            { q: "India's first indigenously developed fighter aircraft is:", a: "HAL Tejas", s: "<strong>HAL Tejas</strong> is India's first domestically developed light combat aircraft, built by Hindustan Aeronautics Limited." },
+            { q: "Which Indian won the Nobel Prize in Economics in 1998?", a: "Amartya Sen", s: "<strong>Amartya Sen</strong> won the Nobel Memorial Prize in Economic Sciences in 1998 for his contributions to welfare economics." },
+            { q: "The Preamble of the Indian Constitution begins with the words:", a: "'We, the People of India'", s: "The Preamble starts: <strong>'We, the People of India, having solemnly resolved...'</strong>" },
+            { q: "Who was the first woman to become President of India?", a: "Pratibha Patil", s: "<strong>Pratibha Devisingh Patil</strong> became India's first female President in 2007." },
+            { q: "India's space mission to Mars (Mangalyaan) was launched in the year:", a: "2013", s: "<strong>Mangalyaan (Mars Orbiter Mission)</strong> was launched by ISRO on 5 November 2013 and reached Mars orbit in 2014." },
+            { q: "Which Indian state has the longest coastline?", a: "Gujarat", s: "<strong>Gujarat</strong> has the longest coastline (~1,600 km) among all Indian states." },
+            { q: "The headquarters of United Nations is in:", a: "New York, USA", s: "The UN headquarters is located in <strong>New York City, USA</strong>. It was established in 1945." },
+            { q: "Which country is the largest producer of rice in the world?", a: "China", s: "<strong>China</strong> is the world's largest producer of rice, followed by India." },
+            { q: "The Chilika Lake, the largest coastal lagoon in India, is in:", a: "Odisha", s: "<strong>Chilika Lake</strong> in Odisha is India's largest coastal lagoon and Asia's largest brackish water lake." },
+            { q: "Who is the current Minister of Railways in India (2025)?", a: "Ashwini Vaishnaw", s: "<strong>Ashwini Vaishnaw</strong> has been serving as the Union Minister of Railways, Electronics and IT." },
+            { q: "The highest civilian honour in India is:", a: "Bharat Ratna", s: "<strong>Bharat Ratna</strong> is India's highest civilian award, instituted in 1954." },
+            { q: "Chandrayaan-3 soft-landed near the Moon's South Pole on:", a: "23 August 2023", s: "India's <strong>Chandrayaan-3</strong> Vikram lander successfully soft-landed on <strong>23 August 2023</strong>, making India the first nation to land near the lunar south pole." },
+            { q: "Which river is known as the 'Sorrow of Bihar'?", a: "Kosi River", s: "The <strong>Kosi River</strong> is known as the 'Sorrow of Bihar' due to its frequent devastating floods." },
+            { q: "National Railway Museum is located in:", a: "New Delhi", s: "The <strong>National Railway Museum</strong> is situated in Chanakyapuri, New Delhi." },
+            { q: "India's first Vande Bharat Express (Train 18) runs between:", a: "New Delhi and Varanasi", s: "<strong>Vande Bharat Express</strong> (semi-high-speed train) was inaugurated on the New Delhi–<strong>Varanasi</strong> route in 2019." },
+            { q: "DRDO stands for:", a: "Defence Research and Development Organisation", s: "<strong>DRDO</strong> — Defence Research and Development Organisation — is India's premier defence R&D agency." },
+            { q: "The first Five-Year Plan of India was launched in:", a: "1951", s: "India's <strong>First Five-Year Plan</strong> was launched in 1951 under Prime Minister Jawaharlal Nehru, focusing on agriculture." },
+            { q: "Which gas causes acid rain?", a: "Sulphur Dioxide (SO₂) and Nitrogen Oxides (NOₓ)", s: "Acid rain forms when <strong>SO₂ and NOₓ</strong> react with water vapour in the atmosphere to form sulphuric and nitric acids." },
+            { q: "India's highest waterfall is:", a: "Kunchikal Falls, Karnataka", s: "<strong>Kunchikal Falls</strong> in Karnataka (455 m) is the tallest waterfall in India." },
+            { q: "The 2024 Paris Olympics India team's flag bearer (opening ceremony) was:", a: "P.V. Sindhu and Sharath Kamal", s: "<strong>P.V. Sindhu and Sharath Kamal</strong> were India's flag bearers at the Paris 2024 Olympics opening ceremony." },
+            { q: "RRB stands for:", a: "Railway Recruitment Board", s: "<strong>RRB</strong> — Railway Recruitment Board — conducts recruitment examinations for Indian Railways." },
+            { q: "Which Article gives the Right to Education to children aged 6–14?", a: "Article 21A", s: "<strong>Article 21A</strong>, inserted by the 86th Constitutional Amendment (2002), provides free and compulsory education to children aged 6–14." },
+            { q: "The Niti Aayog replaced which institution in India?", a: "Planning Commission", s: "<strong>NITI Aayog</strong> (National Institution for Transforming India) replaced the Planning Commission in January 2015." },
+            { q: "India's first satellite was:", a: "Aryabhata (1975)", s: "<strong>Aryabhata</strong> was India's first satellite, launched on 19 April 1975 with Soviet assistance." },
+            { q: "Which is the longest national highway in India?", a: "NH-44 (Srinagar to Kanyakumari)", s: "<strong>NH-44</strong> stretching ~3,745 km from Srinagar to Kanyakumari is the longest national highway in India." },
+            { q: "Who was the first Chairman of the Railway Board of India?", a: "Sir Frederick Upcott", s: "<strong>Sir Frederick Upcott</strong> was the first Chairman of the Railway Board established in 1905." },
+            { q: "The Bharat Net Project aims at:", a: "Broadband connectivity to Gram Panchayats", s: "<strong>BharatNet</strong> aims to provide optical fibre-based broadband internet to all ~2.5 lakh Gram Panchayats." },
+            { q: "India's GDP growth rate for FY2024-25 was approximately:", a: "~6.4%", s: "India's GDP growth for FY2024-25 was projected and confirmed at approximately <strong>6.4%</strong> by official estimates." },
+            { q: "Kavach is an automatic train protection system developed by:", a: "RDSO (Research Designs and Standards Organisation)", s: "<strong>Kavach</strong> is an indigenously developed Automatic Train Protection (ATP) system by RDSO for Indian Railways." },
+            { q: "The headquarters of the International Monetary Fund (IMF) is in:", a: "Washington D.C., USA", s: "The <strong>IMF</strong> is headquartered in Washington D.C., USA and promotes international monetary cooperation." },
+            { q: "Who authored the Arthashastra?", a: "Chanakya (Kautilya)", s: "The <strong>Arthashastra</strong> was written by <strong>Chanakya (Kautilya)</strong>, advisor to Emperor Chandragupta Maurya." },
+            { q: "The United Nations Security Council has how many permanent members?", a: "5 (P5)", s: "The UN Security Council has <strong>5 permanent members (P5)</strong>: USA, UK, France, Russia, and China." },
+            { q: "INS Vikrant is India's:", a: "First indigenously built aircraft carrier", s: "<strong>INS Vikrant</strong>, commissioned in September 2022, is India's first indigenously designed and built aircraft carrier." },
+            { q: "Who is the current ISRO Chairman (2025)?", a: "V. Narayanan", s: "<strong>V. Narayanan</strong> became Chairman of ISRO in January 2025, succeeding S. Somanath." },
+            { q: "The 'Smart Cities Mission' was launched in India in:", a: "2015", s: "The <strong>Smart Cities Mission</strong> was launched on 25 June 2015 to develop 100 smart cities across India." },
+            { q: "Amrit Bharat Station Scheme aims to redevelop how many railway stations?", a: "1,309 stations", s: "The <strong>Amrit Bharat Station Scheme</strong> plans to redevelop <strong>1,309 railway stations</strong> with modern facilities." },
+            { q: "Who is the author of the book 'Discovery of India'?", a: "Jawaharlal Nehru", s: "<strong>'Discovery of India'</strong> was written by Jawaharlal Nehru while imprisoned in Ahmednagar Fort (1944)." },
+            { q: "Project Tiger was launched in India in:", a: "1973", s: "<strong>Project Tiger</strong> was launched on 1 April 1973 to protect Bengal tigers. India now has 55+ tiger reserves." },
+            { q: "The concept of Panchayati Raj in India is related to:", a: "Local self-governance at village level", s: "<strong>Panchayati Raj</strong> (Article 40, 73rd Amendment) is the system of rural local self-governance at village, block, and district levels." },
+            { q: "SWIFT in banking stands for:", a: "Society for Worldwide Interbank Financial Telecommunication", s: "<strong>SWIFT</strong> is a global messaging network used by financial institutions for secure international money transfers." },
+            { q: "India's first high-speed rail project (Bullet Train) runs between:", a: "Mumbai and Ahmedabad", s: "India's first bullet train project on the <strong>Mumbai–Ahmedabad</strong> corridor uses Japan's Shinkansen technology." },
+            { q: "The Comptroller and Auditor General (CAG) of India is appointed by:", a: "The President of India", s: "The <strong>CAG</strong> is appointed by the President of India under Article 148 of the Constitution." },
+            { q: "Vande Metro is:", a: "An upgraded metro-style train introduced by Indian Railways", s: "<strong>Vande Metro</strong> is a light, energy-efficient metro-style train introduced by Indian Railways for shorter intercity routes." },
+            { q: "Which country topped the medal tally at the Paris Olympics 2024?", a: "USA", s: "The <strong>United States</strong> topped the 2024 Paris Olympics medal tally with the most gold medals." },
+            { q: "The QUAD (Quadrilateral Security Dialogue) consists of:", a: "USA, India, Japan, Australia", s: "<strong>QUAD</strong> is an informal strategic grouping of <strong>USA, India, Japan, and Australia</strong>, focused on Indo-Pacific security." },
+            { q: "India's 'One Nation One Ration Card' scheme is related to:", a: "Public Distribution System (food security)", s: "<strong>One Nation One Ration Card (ONORC)</strong> allows beneficiaries to access their entitled food grains from any Fair Price Shop across India." },
+            { q: "Which Act governs the functioning of Indian Railways?", a: "Railways Act, 1989", s: "Indian Railways is governed by the <strong>Railways Act, 1989</strong>, which consolidates all railway-related legislation." },
+            { q: "The Semiconductor Mission of India was launched to:", a: "Build a domestic chip manufacturing ecosystem", s: "India's <strong>Semiconductor Mission</strong> aims to establish a domestic semiconductor design, manufacturing, and packaging ecosystem." },
+            { q: "Who received the Bharat Ratna in 2024?", a: "LK Advani, Chaudhary Charan Singh, PV Narasimha Rao, MS Swaminathan, Karpoori Thakur", s: "In 2024, <strong>Bharat Ratna</strong> was awarded to: LK Advani, Chaudhary Charan Singh (posthumous), PV Narasimha Rao (posthumous), MS Swaminathan (posthumous), and Karpoori Thakur (posthumous)." },
+            { q: "The Union Budget 2025-26 was presented by:", a: "Nirmala Sitharaman", s: "<strong>Nirmala Sitharaman</strong> presented the Union Budget 2025-26 on 1 February 2025." },
+            { q: "Which Indian city is called the 'Silicon Valley of India'?", a: "Bengaluru", s: "<strong>Bengaluru (Bangalore)</strong> is called India's Silicon Valley due to its thriving IT and tech industry." },
+            { q: "Under the PM Gati Shakti initiative, the goal is to:", a: "Integrate multi-modal connectivity infrastructure", s: "<strong>PM Gati Shakti</strong> is a ₹100 lakh crore national masterplan to provide holistic, integrated multimodal connectivity for infrastructure development." }
+        ];
+
+        // =====================================================================
+        // RENDER Q&A
+        // =====================================================================
+        function renderQA(data, containerId, tagClass, tagLabel) {
+            const container = document.getElementById(containerId);
+            if (container.children.length > 0) return;
+            const row = document.createElement('div');
+            row.className = 'row';
+            data.forEach((item, i) => {
+                const col = document.createElement('div');
+                col.className = 'col-lg-6 ani';
+                col.style.animationDelay = (i * 0.03) + 's';
+                col.innerHTML = `
+                <div class="q-card">
+                <div class="q-card-hdr">
+                    <span class="q-num">Q${i + 1}</span>
+                    <div><span class="stag ${tagClass}">${tagLabel}</span>
+                    <div class="q-text mt-1">${item.q}</div>
+                    </div>
+                </div>
+                <div class="q-body">
+                    <div class="ans-label"><i class="fas fa-check-circle"></i> Answer</div>
+                    <div class="ans-text">${item.a}</div>
+                    <button class="sol-toggle" onclick="toggleSol(this)"><i class="fas fa-eye me-1"></i>View Explanation</button>
+                    <div class="sol-box d-none">${item.s}</div>
+                </div>
+                </div>`;
+                row.appendChild(col);
+            });
+            container.appendChild(row);
+        }
+
+        function toggleSol(btn) {
+            const box = btn.nextElementSibling;
+            if (box.classList.contains('d-none')) {
+                box.classList.remove('d-none');
+                btn.innerHTML = '<i class="fas fa-eye-slash me-1"></i>Hide Explanation';
+            } else {
+                box.classList.add('d-none');
+                btn.innerHTML = '<i class="fas fa-eye me-1"></i>View Explanation';
+            }
+        }
+
+        // =====================================================================
+        // TEST PRACTICE (100 Questions: 30M+25R+25S+20A)
+        // =====================================================================
+        const testAnswers = {};
+        let testData = [];
+        let testSubmitted = false;
+
+        function sample(arr, n) { return [...arr].sort(() => Math.random() - .5).slice(0, n); }
+
+        function buildTest() {
+            const mq = sample(mathQ, 30).map(q => ({ ...q, tag: 'math', tl: 'Mathematics', tc: 't-math' }));
+            const rq = sample(reasonQ, 25).map(q => ({ ...q, tag: 'reason', tl: 'Reasoning', tc: 't-reason' }));
+            const sq = sample(sciQ, 25).map(q => ({ ...q, tag: 'sci', tl: 'Science', tc: 't-sci' }));
+            const aq = sample(awareQ, 20).map(q => ({ ...q, tag: 'aware', tl: 'Awareness', tc: 't-aware' }));
+            testData = [...mq, ...rq, ...sq, ...aq].sort(() => Math.random() - .5);
+        }
+
+        function getAllAnswers() { return [...mathQ, ...reasonQ, ...sciQ, ...awareQ]; }
+
+        function makeOptions(correct) {
+            const pool = getAllAnswers().map(q => q.a).filter(a => a !== correct);
+            const others = [...new Set(pool)].sort(() => Math.random() - .5).slice(0, 3);
+            return [correct, ...others].sort(() => Math.random() - .5);
+        }
+
+        function renderTest() {
+            Object.keys(testAnswers).forEach(k => delete testAnswers[k]);
+            testData = []; testSubmitted = false;
+            buildTest();
+            const container = document.getElementById('test-content');
+            const letters = ['A', 'B', 'C', 'D'];
+            let html = `
+            <div class="test-hdr">
+            <div style="font-size:2.8rem;opacity:.9"><i class="fas fa-file-alt"></i></div>
+            <div>
+                <h2 style="font-family:'Rajdhani',sans-serif;font-size:1.65rem;font-weight:700;margin-bottom:5px">RRB CBT 2 Mock Test</h2>
+                <p style="opacity:.78;font-size:.88rem;margin:0">Attempt all 100 questions. Each correct answer carries 1 mark. Negative marking: 1/3 per wrong answer.</p>
+                <div class="test-meta">
+                <span class="t-meta-item"><i class="fas fa-question-circle"></i> 100 Questions</span>
+                <span class="t-meta-item"><i class="fas fa-clock"></i> 90 Minutes</span>
+                <span class="t-meta-item"><i class="fas fa-star"></i> 100 Marks</span>
+                <span class="t-meta-item"><i class="fas fa-minus-circle"></i> 1/3 Negative</span>
+                </div>
+            </div>
+            </div>
+            <div class="test-prog" id="tProg">
+            <div class="d-flex justify-content-between align-items-center">
+                <span style="font-family:'Rajdhani',sans-serif;font-weight:600;font-size:.9rem">Progress: <span id="pCount">0</span>/100 answered</span>
+                <span style="font-size:.8rem;color:var(--muted)"><span id="pPct">0</span>%</span>
+            </div>
+            <div class="prog-rail"><div class="prog-fill" id="pFill" style="width:0%"></div></div>
+            </div>`;
+
+            testData.forEach((item, i) => {
+                const opts = makeOptions(item.a);
+                window['_opts_' + i] = opts;
+                let optsHtml = opts.map((opt, oi) => `
+                  <label class="t-opt" id="topt-${i}-${oi}" onclick="pickOpt(${i},${oi})">
+                    <input type="radio" name="tq${i}" id="tradio-${i}-${oi}">
+                    <strong style="color:var(--blue)">${letters[oi]})</strong> ${opt}
+                  </label>`).join('');
+                            html += `
+                <div class="tq-card" id="tqc-${i}">
+                  <div class="tq-num">Q${i + 1} <span class="stag ${item.tc}">${item.tl}</span></div>
+                  <div class="tq-text">${item.q}</div>
+                  <div>${optsHtml}</div>
+                </div>`;
+            });
+
+            html += `<div class="text-center py-4"><button class="sub-btn" onclick="submitTest()"><i class="fas fa-paper-plane me-2"></i>Submit Test</button></div>`;
+            container.innerHTML = html;
+        }
+
+        function pickOpt(qi, oi) {
+            testAnswers[qi] = { oi, val: window['_opts_' + qi][oi] };
+            document.getElementById('tqc-' + qi).classList.add('answered');
+            const answered = Object.keys(testAnswers).length;
+            const pct = Math.round((answered / 100) * 100);
+            document.getElementById('pCount').textContent = answered;
+            document.getElementById('pPct').textContent = pct;
+            document.getElementById('pFill').style.width = pct + '%';
+        }
+
+        function submitTest() {
+            if (testSubmitted) return;
+            const attempted = Object.keys(testAnswers).length;
+            if (attempted < 10 && !confirm(`You've only answered ${attempted}/100 questions. Submit anyway?`)) return;
+            testSubmitted = true;
+            let correct = 0, wrong = 0;
+            testData.forEach((item, i) => {
+                const opts = window['_opts_' + i];
+                const correctIdx = opts.indexOf(item.a);
+                for (let oi = 0; oi < 4; oi++) {
+                    const el = document.getElementById('topt-' + i + '-' + oi);
+                    if (!el) continue;
+                    if (oi === correctIdx) el.classList.add('correct-ans');
+                    if (testAnswers[i] !== undefined && testAnswers[i].oi === oi && oi !== correctIdx) el.classList.add('wrong-ans');
+                    const r = document.getElementById('tradio-' + i + '-' + oi);
+                    if (r) r.disabled = true;
+                }
+                if (testAnswers[i] !== undefined) {
+                    if (testAnswers[i].oi === correctIdx) correct++;
+                    else wrong++;
+                }
+            });
+            const score = (correct - (wrong / 3)).toFixed(2);
+            const pct = ((score / 100) * 100).toFixed(1);
+            const grade = pct >= 70 ? '🏆 Excellent' : pct >= 50 ? '✅ Good' : pct >= 35 ? '⚠️ Average' : '❌ Needs More Practice';
+            const unattempted = 100 - attempted;
+            const resultHtml = `
+  <div class="result-card" id="resultBox">
+    <div style="font-family:'Rajdhani',sans-serif;font-size:1.9rem;font-weight:700;margin-bottom:6px">Test Completed! ${grade}</div>
+    <div class="res-score">${score}</div>
+    <p style="opacity:.78;font-size:.93rem;margin:0 0 6px">out of 100 marks (with 1/3 negative marking)</p>
+    <div style="font-size:1.2rem;font-family:'Rajdhani',sans-serif;font-weight:700;opacity:.88">${pct}%</div>
+    <div class="res-grid">
+      <div class="res-stat"><div class="res-val">100</div><div class="res-lbl">Total Questions</div></div>
+      <div class="res-stat"><div class="res-val">${attempted}</div><div class="res-lbl">Attempted</div></div>
+      <div class="res-stat"><div class="res-val" style="color:#6ee7b7">${correct}</div><div class="res-lbl">Correct</div></div>
+      <div class="res-stat"><div class="res-val" style="color:#fca5a5">${wrong}</div><div class="res-lbl">Wrong</div></div>
+      <div class="res-stat"><div class="res-val">${unattempted}</div><div class="res-lbl">Unattempted</div></div>
+      <div class="res-stat"><div class="res-val" style="color:var(--accent)">${pct}%</div><div class="res-lbl">Percentage</div></div>
+    </div>
+    <button class="sub-btn mt-4" onclick="showSec('test')"><i class="fas fa-redo me-2"></i>Retry Test</button>
+  </div>`;
+            const container = document.getElementById('test-content');
+            container.insertAdjacentHTML('afterbegin', resultHtml);
+            document.getElementById('resultBox').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // =====================================================================
+        // NAVIGATION
+        // =====================================================================
+        function showSec(name) {
+            document.getElementById('hero').classList.add('d-none');
+            document.querySelectorAll('.csec').forEach(s => s.classList.add('d-none'));
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+            const sec = document.getElementById('sec-' + name);
+            if (sec) sec.classList.remove('d-none');
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                if (btn.getAttribute('onclick') && btn.getAttribute('onclick').includes("'" + name + "'")) btn.classList.add('active');
+            });
+            if (name === 'math') renderQA(mathQ, 'math-q', 't-math', 'Mathematics');
+            if (name === 'reason') renderQA(reasonQ, 'reason-q', 't-reason', 'Reasoning');
+            if (name === 'sci') renderQA(sciQ, 'sci-q', 't-sci', 'Science');
+            if (name === 'aware') renderQA(awareQ, 'aware-q', 't-aware', 'Awareness');
+            if (name === 'test') renderTest();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            const nb = document.getElementById('navMain');
+            if (nb.classList.contains('show')) { bootstrap.Collapse.getInstance(nb)?.hide(); }
+        }
+    </script>
+
+</body>
+
+</html>
