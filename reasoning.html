@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reasoning - RRB CBT 2 Exam Preparation 2026</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="brand-icon"><i class="fas fa-train"></i></div>
+                RRB CBT 2 Exam Preparation
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navMain">
+                <div class="navbar-nav gap-1">
+                    <a class="nav-btn" href="mathematics.html"><i class="fas fa-square-root-alt me-1"></i>Mathematics</a>
+                    <a class="nav-btn active" href="reasoning.html"><i class="fas fa-brain me-1"></i>Reasoning</a>
+                    <a class="nav-btn" href="general-science.html"><i class="fas fa-flask me-1"></i>General Science</a>
+                    <a class="nav-btn" href="general-awareness.html"><i class="fas fa-globe me-1"></i>General Awareness</a>
+                    <a class="nav-btn test-btn" href="test-practice.html"><i class="fas fa-clipboard-check me-1"></i>Test Practice</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="hero" style="padding:38px 0 30px">
+        <div class="container">
+            <div class="cbt2-label">CBT 2 &middot; 2026 EDITION</div>
+            <h1 style="font-family:'Rajdhani',sans-serif;font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;letter-spacing:1px;margin-bottom:10px">
+                Reasoning <span style="color:var(--accent)">Question Bank</span>
+            </h1>
+            <p style="font-size:.98rem;opacity:.82;max-width:560px;margin:0 auto;line-height:1.6">
+                Practice Reasoning questions aligned with the RRB CBT 2 exam pattern, each with a detailed step-by-step explanation.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN -->
+    <div class="container py-2" id="mainContent">
+        <div id="sec-reason" class="csec">
+            <div class="sec-hdr">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                    <div class="sec-title">
+                        <div class="sec-icon" style="background:#ede9fe;color:#5b21b6"><i
+                                class="fas fa-brain"></i></div>Reasoning
+                    </div>
+                    <span class="sec-count">68 Questions</span>
+                </div>
+            </div>
+            <div id="reason-q"></div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="container">
+            <strong style="color:#fff">RRB CBT 2 Exam Preparation 2026</strong> &nbsp;|&nbsp; 280+ Questions
+            &nbsp;·&nbsp; 100-Question Mock Test<br>
+            <small>For educational purposes only &middot; <span>2026 RRB CBT 2 Preparation</span></small>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="data-reasoning.js"></script>
+    <script src="common.js"></script>
+    <script>
+        renderQA(reasonQ, 'reason-q', 't-reason', 'Reasoning');
+    </script>
+
+</body>
+
+</html>
