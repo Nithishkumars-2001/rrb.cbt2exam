@@ -8,19 +8,33 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1684242835147633"
-     crossorigin="anonymous"></script>
 
     <!-- Ads Sense link -->
     <meta name="google-adsense-account" content="ca-pub-1684242835147633">
 
-    <!-- Google Search Console link -->
-    <meta name="google-site-verification" content="H7gB5AGytu3hASQ3pwpH16zcMU7SUrdKjeU1gX_VIaM" />
-
-    <!-- Mongtag Ads link -->
-    <script src="https://quge5.com/88/tag.min.js" data-zone="255770" async data-cfasync="false"></script>
-
     <style>
+        :root {
+            --card: #fff;
+            --border: #e2e8f0;
+            --text: #0f172a;
+            --muted: #64748b;
+            --bright: #2563eb;
+            --accent: #f59e0b;
+            --blue: #1e40af;
+            --light: #dbeafe;
+            --shadow: 0 4px 20px rgba(7, 21, 42, .08)
+        }
+
+        body.dark {
+            --card: #1e293b;
+            --border: #334155;
+            --text: #e2e8f0;
+            --muted: #94a3b8;
+            --light: #1e3a8a;
+            background: #0f172a;
+            color: #e2e8f0
+        }
+
         .home-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -37,13 +51,13 @@
             text-decoration: none;
             color: var(--text);
             display: block;
-            transition: transform .18s, box-shadow .18s;
+            transition: transform .18s, box-shadow .18s
         }
 
         .home-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 10px 36px rgba(7, 21, 42, 0.16);
-            color: var(--text);
+            box-shadow: 0 10px 36px rgba(7, 21, 42, .16);
+            color: var(--text)
         }
 
         .home-card .hc-icon {
@@ -54,21 +68,21 @@
             align-items: center;
             justify-content: center;
             font-size: 1.3rem;
-            margin-bottom: 14px;
+            margin-bottom: 14px
         }
 
         .home-card h3 {
             font-family: 'Rajdhani', sans-serif;
             font-weight: 700;
             font-size: 1.2rem;
-            margin-bottom: 6px;
+            margin-bottom: 6px
         }
 
         .home-card p {
             font-size: .87rem;
             color: var(--muted);
             margin-bottom: 10px;
-            line-height: 1.5;
+            line-height: 1.5
         }
 
         .home-card .hc-count {
@@ -76,53 +90,293 @@
             font-weight: 700;
             font-size: .78rem;
             color: var(--bright);
-            letter-spacing: .5px;
+            letter-spacing: .5px
         }
 
         .home-card.test-card .hc-icon {
             background: #dbeafe;
             color: #1e40af
         }
+
+        /* New sections */
+        .panel {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            padding: 22px;
+            height: 100%;
+            color: var(--text)
+        }
+
+        .panel h4 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-bottom: 14px
+        }
+
+        .panel h4 i {
+            color: var(--bright);
+            margin-right: 8px
+        }
+
+        .sec-gap {
+            margin: 34px 0
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 18px 8px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            box-shadow: var(--shadow);
+            color: var(--text)
+        }
+
+        .stat-box .num {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--bright)
+        }
+
+        .stat-box small {
+            color: var(--muted)
+        }
+
+        .cd-row {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin: 14px 0
+        }
+
+        .cd-box {
+            background: #0f2744;
+            color: #fff;
+            border-radius: 12px;
+            min-width: 68px;
+            padding: 10px 6px;
+            text-align: center
+        }
+
+        .cd-box b {
+            display: block;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.8rem
+        }
+
+        .cd-box span {
+            font-size: .7rem;
+            opacity: .7;
+            text-transform: uppercase
+        }
+
+        .bar-row {
+            margin-bottom: 12px
+        }
+
+        .bar-row .lbl {
+            display: flex;
+            justify-content: space-between;
+            font-size: .85rem;
+            margin-bottom: 4px
+        }
+
+        .bar-bg {
+            height: 10px;
+            background: var(--border);
+            border-radius: 6px;
+            overflow: hidden
+        }
+
+        .bar-fill {
+            height: 100%;
+            width: 0;
+            border-radius: 6px;
+            transition: width 1s ease
+        }
+
+        .pattern-table td,
+        .pattern-table th {
+            padding: 9px 12px;
+            border-bottom: 1px solid var(--border);
+            font-size: .9rem;
+            color: var(--text)
+        }
+
+        .pattern-table {
+            width: 100%
+        }
+
+        .opt {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 10px 14px;
+            margin: 6px 0;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: transparent;
+            color: var(--text);
+            transition: .15s
+        }
+
+        .opt:hover:not(:disabled) {
+            border-color: var(--bright);
+            background: var(--light)
+        }
+
+        .opt.right {
+            background: #d1fae5 !important;
+            border-color: #10b981;
+            color: #065f46
+        }
+
+        .opt.wrong {
+            background: #fee2e2 !important;
+            border-color: #ef4444;
+            color: #991b1b
+        }
+
+        .timer-big {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 3.4rem;
+            font-weight: 700;
+            text-align: center;
+            color: var(--bright)
+        }
+
+        .mode-btn.active {
+            background: var(--bright);
+            color: #fff
+        }
+
+        .formula-item {
+            padding: 10px 12px;
+            border-left: 4px solid var(--accent);
+            background: var(--light);
+            border-radius: 8px;
+            margin-bottom: 8px;
+            font-size: .9rem;
+            color: var(--text)
+        }
+
+        .formula-item b {
+            display: block
+        }
+
+        .todo-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+            color: var(--text)
+        }
+
+        .todo-item.done span {
+            text-decoration: line-through;
+            color: var(--muted)
+        }
+
+        .todo-item span {
+            flex: 1
+        }
+
+        .calc-out {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background: var(--light);
+            font-weight: 600;
+            color: var(--text);
+            min-height: 42px
+        }
+
+        .form-control,
+        .form-select {
+            background: var(--card);
+            color: var(--text);
+            border-color: var(--border)
+        }
+
+        .accordion-item,
+        .accordion-button {
+            background: var(--card) !important;
+            color: var(--text) !important
+        }
+
+        .fab {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            z-index: 99;
+            display: flex;
+            flex-direction: column;
+            gap: 10px
+        }
+
+        .fab button {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            border: 0;
+            background: var(--bright);
+            color: #fff;
+            box-shadow: var(--shadow)
+        }
+
+        .tip-card {
+            background: linear-gradient(135deg, #0f2744, #1e40af);
+            color: #fff;
+            border-radius: 16px;
+            padding: 22px;
+            text-align: center
+        }
+
+        .tip-card p {
+            font-size: 1.05rem;
+            margin: 8px 0 14px
+        }
     </style>
-    
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg main-navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <div class="brand-icon"><i class="fas fa-train"></i></div>
-                RRB CBT 2 Exam Preparation
+                <div class="brand-icon"><i class="fas fa-train"></i></div>RRB CBT 2 Exam Preparation
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"><span
+                    class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse justify-content-end" id="navMain">
                 <div class="navbar-nav gap-1">
-                    <a class="nav-btn" href="mathematics.html"><i class="fas fa-square-root-alt me-1"></i>Mathematics</a>
+                    <a class="nav-btn" href="mathematics.html"><i
+                            class="fas fa-square-root-alt me-1"></i>Mathematics</a>
                     <a class="nav-btn" href="reasoning.html"><i class="fas fa-brain me-1"></i>Reasoning</a>
                     <a class="nav-btn" href="general-science.html"><i class="fas fa-flask me-1"></i>General Science</a>
-                    <a class="nav-btn" href="general-awareness.html"><i class="fas fa-globe me-1"></i>General Awareness</a>
-                    <a class="nav-btn test-btn" href="test-practice.html"><i class="fas fa-clipboard-check me-1"></i>Test Practice</a>
+                    <a class="nav-btn" href="general-awareness.html"><i class="fas fa-globe me-1"></i>General
+                        Awareness</a>
+                    <a class="nav-btn test-btn" href="test-practice.html"><i
+                            class="fas fa-clipboard-check me-1"></i>Test Practice</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- HERO -->
     <section class="hero" id="hero">
         <div class="container">
             <div class="cbt2-label">CBT 2 &middot; 2026 EDITION</div>
             <h1
                 style="font-family:'Rajdhani',sans-serif;font-size:clamp(1.9rem,5vw,3rem);font-weight:700;letter-spacing:1px;margin-bottom:13px">
-                Master <span style="color:var(--accent)">RRB CBT 2</span> with Confidence
-            </h1>
-            <p style="font-size:1.02rem;opacity:.82;max-width:580px;margin:0 auto;line-height:1.6">
-                Advanced question bank aligned with CBT 2 exam pattern &mdash; Mathematics, Reasoning, General Science &
-                General Awareness with detailed explanations
-            </p>
+                Master <span style="color:var(--accent)">RRB CBT 2</span> with Confidence</h1>
+            <p style="font-size:1.02rem;opacity:.82;max-width:580px;margin:0 auto;line-height:1.6">Advanced question
+                bank aligned with CBT 2 exam pattern &mdash; Mathematics, Reasoning, General Science &amp; General
+                Awareness with detailed explanations</p>
             <div class="hero-badge-row">
                 <span class="hbadge"><i class="fas fa-book me-1"></i>280+ Questions</span>
                 <span class="hbadge"><i class="fas fa-lightbulb me-1"></i>Step-by-Step Solutions</span>
@@ -133,46 +387,310 @@
         </div>
     </section>
 
-    <!-- HOME GRID -->
     <div class="container py-2">
+
+        <!-- 1. STATS -->
+        <div class="row g-3 sec-gap" id="stats">
+            <div class="col-6 col-md-3">
+                <div class="stat-box">
+                    <div class="num" data-to="277">0</div><small>Total Questions</small>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-box">
+                    <div class="num" data-to="4">0</div><small>Subjects</small>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-box">
+                    <div class="num" data-to="100">0</div><small>Mock Test Qs</small>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-box">
+                    <div class="num" data-to="90">0</div><small>Minutes</small>
+                </div>
+            </div>
+        </div>
+
         <div class="sec-hdr">
             <div class="sec-title">
-                <div class="sec-icon" style="background:var(--light);color:var(--blue)"><i class="fas fa-compass"></i></div>
-                Choose a Section
+                <div class="sec-icon" style="background:var(--light);color:var(--blue)"><i class="fas fa-compass"></i>
+                </div>Choose a Section
             </div>
         </div>
         <div class="home-grid">
             <a class="home-card" href="mathematics.html">
-                <div class="hc-icon" style="background:#fef3c7;color:#92400e"><i class="fas fa-square-root-alt"></i></div>
+                <div class="hc-icon" style="background:#fef3c7;color:#92400e"><i class="fas fa-square-root-alt"></i>
+                </div>
                 <h3>Mathematics</h3>
-                <p>Quantitative aptitude questions covering time-speed-distance, interest, algebra, mensuration and more.</p>
-                <span class="hc-count">68 Questions &rarr;</span>
+                <p>Quantitative aptitude questions covering time-speed-distance, interest, algebra, mensuration and
+                    more.</p><span class="hc-count">68 Questions &rarr;</span>
             </a>
             <a class="home-card" href="reasoning.html">
                 <div class="hc-icon" style="background:#ede9fe;color:#5b21b6"><i class="fas fa-brain"></i></div>
                 <h3>Reasoning</h3>
-                <p>Verbal &amp; logical reasoning: series, coding-decoding, blood relations, direction sense and more.</p>
-                <span class="hc-count">68 Questions &rarr;</span>
+                <p>Verbal &amp; logical reasoning: series, coding-decoding, blood relations, direction sense and more.
+                </p><span class="hc-count">68 Questions &rarr;</span>
             </a>
             <a class="home-card" href="general-science.html">
                 <div class="hc-icon" style="background:#d1fae5;color:#065f46"><i class="fas fa-flask"></i></div>
                 <h3>General Science</h3>
-                <p>Physics, chemistry and biology fundamentals frequently asked in RRB CBT 2 exams.</p>
-                <span class="hc-count">70 Questions &rarr;</span>
+                <p>Physics, chemistry and biology fundamentals frequently asked in RRB CBT 2 exams.</p><span
+                    class="hc-count">70 Questions &rarr;</span>
             </a>
             <a class="home-card" href="general-awareness.html">
                 <div class="hc-icon" style="background:#fee2e2;color:#991b1b"><i class="fas fa-globe"></i></div>
                 <h3>General Awareness</h3>
-                <p>Current affairs, Indian polity, geography, history and railway-specific general knowledge.</p>
-                <span class="hc-count">71 Questions &rarr;</span>
+                <p>Current affairs, Indian polity, geography, history and railway-specific general knowledge.</p><span
+                    class="hc-count">71 Questions &rarr;</span>
             </a>
             <a class="home-card test-card" href="test-practice.html">
                 <div class="hc-icon"><i class="fas fa-clipboard-check"></i></div>
                 <h3>Test Practice</h3>
-                <p>Take a full 100-question mock test sampled from all sections with auto scoring and negative marking.</p>
-                <span class="hc-count">100-Q Mock Test &rarr;</span>
+                <p>Take a full 100-question mock test sampled from all sections with auto scoring and negative marking.
+                </p><span class="hc-count">100-Q Mock Test &rarr;</span>
             </a>
         </div>
+
+        <!-- 2 & 3. COUNTDOWN + TIP -->
+        <div class="row g-4 sec-gap">
+            <div class="col-lg-7">
+                <div class="panel" id="countdown">
+                    <h4><i class="fas fa-hourglass-half"></i>Exam Countdown</h4>
+                    <label class="small text-muted">Set your exam date</label>
+                    <input type="date" id="examDate" class="form-control mb-2" />
+                    <div class="cd-row">
+                        <div class="cd-box"><b id="cdD">0</b><span>Days</span></div>
+                        <div class="cd-box"><b id="cdH">0</b><span>Hours</span></div>
+                        <div class="cd-box"><b id="cdM">0</b><span>Min</span></div>
+                        <div class="cd-box"><b id="cdS">0</b><span>Sec</span></div>
+                    </div>
+                    <div class="text-center small text-muted" id="cdMsg">Pick a date to start the countdown.</div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="tip-card h-100 d-flex flex-column justify-content-center">
+                    <div><i class="fas fa-lightbulb fa-2x" style="color:var(--accent)"></i></div>
+                    <p id="tipText"></p>
+                    <div><button class="btn btn-sm btn-light" id="tipBtn"><i class="fas fa-sync-alt me-1"></i>Next
+                            Tip</button></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 & 5. PATTERN + WEIGHTAGE -->
+        <div class="row g-4 sec-gap">
+            <div class="col-lg-6">
+                <div class="panel">
+                    <h4><i class="fas fa-table"></i>Exam Pattern</h4>
+                    <table class="pattern-table">
+                        <tr>
+                            <th>Subject</th>
+                            <th>Questions</th>
+                            <th>Marks</th>
+                        </tr>
+                        <tr>
+                            <td>Mathematics</td>
+                            <td>35</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>General Intelligence &amp; Reasoning</td>
+                            <td>30</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>General Awareness</td>
+                            <td>15</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>General Science</td>
+                            <td>20</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td><b>Total</b></td>
+                            <td><b>100</b></td>
+                            <td><b>100</b></td>
+                        </tr>
+                    </table>
+                    <div class="small text-muted mt-2"><i class="fas fa-minus-circle me-1"></i>Negative marking: 1/3
+                        mark per wrong answer. Duration: 90 minutes.</div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="panel" id="weightage">
+                    <h4><i class="fas fa-chart-bar"></i>Subject Weightage</h4>
+                    <div class="bar-row">
+                        <div class="lbl"><span>Mathematics</span><span>35%</span></div>
+                        <div class="bar-bg">
+                            <div class="bar-fill" data-w="35" style="background:#f59e0b"></div>
+                        </div>
+                    </div>
+                    <div class="bar-row">
+                        <div class="lbl"><span>Reasoning</span><span>30%</span></div>
+                        <div class="bar-bg">
+                            <div class="bar-fill" data-w="30" style="background:#7c3aed"></div>
+                        </div>
+                    </div>
+                    <div class="bar-row">
+                        <div class="lbl"><span>General Science</span><span>20%</span></div>
+                        <div class="bar-bg">
+                            <div class="bar-fill" data-w="20" style="background:#10b981"></div>
+                        </div>
+                    </div>
+                    <div class="bar-row">
+                        <div class="lbl"><span>General Awareness</span><span>15%</span></div>
+                        <div class="bar-bg">
+                            <div class="bar-fill" data-w="15" style="background:#ef4444"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. QUICK QUIZ -->
+        <div class="sec-gap">
+            <div class="panel" id="quiz">
+                <h4><i class="fas fa-bolt"></i>Quick Quiz <small class="text-muted fs-6" id="qProg"></small></h4>
+                <div id="qBody"></div>
+                <div class="mt-3 d-flex justify-content-between align-items-center">
+                    <span class="fw-bold" id="qScore"></span>
+                    <button class="btn btn-primary btn-sm" id="qNext" style="display:none">Next <i
+                            class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7 & 8. POMODORO + CHECKLIST -->
+        <div class="row g-4 sec-gap">
+            <div class="col-lg-5">
+                <div class="panel">
+                    <h4><i class="fas fa-stopwatch"></i>Study Timer</h4>
+                    <div class="d-flex gap-2 justify-content-center mb-2">
+                        <button class="btn btn-outline-primary btn-sm mode-btn active" data-min="25">Focus 25</button>
+                        <button class="btn btn-outline-primary btn-sm mode-btn" data-min="5">Break 5</button>
+                        <button class="btn btn-outline-primary btn-sm mode-btn" data-min="15">Long 15</button>
+                    </div>
+                    <div class="timer-big" id="tm">25:00</div>
+                    <div class="d-flex gap-2 justify-content-center">
+                        <button class="btn btn-success btn-sm" id="tmStart"><i class="fas fa-play"></i> Start</button>
+                        <button class="btn btn-warning btn-sm" id="tmPause"><i class="fas fa-pause"></i></button>
+                        <button class="btn btn-secondary btn-sm" id="tmReset"><i class="fas fa-redo"></i></button>
+                    </div>
+                    <div class="text-center small text-muted mt-2">Sessions completed: <b id="tmCount">0</b></div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="panel">
+                    <h4><i class="fas fa-list-check"></i>Study Planner</h4>
+                    <div class="input-group mb-2">
+                        <input type="text" id="todoIn" class="form-control"
+                            placeholder="e.g. Practice 20 Percentage questions" />
+                        <button class="btn btn-primary" id="todoAdd"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="bar-bg mb-2">
+                        <div class="bar-fill" id="todoBar" style="background:#10b981;width:0"></div>
+                    </div>
+                    <div class="small text-muted mb-2" id="todoStat"></div>
+                    <div id="todoList" style="max-height:230px;overflow:auto"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9. FORMULAS -->
+        <div class="sec-gap">
+            <div class="panel">
+                <h4><i class="fas fa-superscript"></i>Formula Finder</h4>
+                <input type="text" id="fSearch" class="form-control mb-3"
+                    placeholder="Search: speed, interest, area, profit..." />
+                <div class="row" id="fList"></div>
+            </div>
+        </div>
+
+        <!-- 10. CALCULATORS -->
+        <div class="row g-4 sec-gap">
+            <div class="col-md-4">
+                <div class="panel">
+                    <h4><i class="fas fa-percent"></i>Percentage</h4>
+                    <input type="number" id="pA" class="form-control mb-2" placeholder="Percent (e.g. 15)" />
+                    <input type="number" id="pB" class="form-control mb-2" placeholder="Of number (e.g. 240)" />
+                    <button class="btn btn-primary btn-sm" id="pGo">Calculate</button>
+                    <div class="calc-out" id="pOut"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel">
+                    <h4><i class="fas fa-coins"></i>Simple Interest</h4>
+                    <input type="number" id="siP" class="form-control mb-2" placeholder="Principal" />
+                    <input type="number" id="siR" class="form-control mb-2" placeholder="Rate % per year" />
+                    <input type="number" id="siT" class="form-control mb-2" placeholder="Time (years)" />
+                    <button class="btn btn-primary btn-sm" id="siGo">Calculate</button>
+                    <div class="calc-out" id="siOut"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel">
+                    <h4><i class="fas fa-gauge-high"></i>Speed / Distance / Time</h4>
+                    <input type="number" id="sdS" class="form-control mb-2" placeholder="Speed (km/h)" />
+                    <input type="number" id="sdD" class="form-control mb-2" placeholder="Distance (km)" />
+                    <input type="number" id="sdT" class="form-control mb-2" placeholder="Time (hours)" />
+                    <button class="btn btn-primary btn-sm" id="sdGo">Solve (leave one blank)</button>
+                    <div class="calc-out" id="sdOut"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 11. FAQ -->
+        <div class="sec-gap">
+            <div class="panel">
+                <h4><i class="fas fa-circle-question"></i>FAQ</h4>
+                <div class="accordion" id="faq">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button class="accordion-button collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#f1">How does the mock test scoring
+                                work?</button></h2>
+                        <div id="f1" class="accordion-collapse collapse" data-bs-parent="#faq">
+                            <div class="accordion-body">Each correct answer gives 1 mark and each wrong answer deducts
+                                1/3 mark. Unattempted questions carry no penalty.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button class="accordion-button collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#f2">How many questions are there in
+                                total?</button></h2>
+                        <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                            <div class="accordion-body">The bank has 277 questions across four subjects, and the mock
+                                test samples 100 of them.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button class="accordion-button collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#f3">Is my planner data saved?</button></h2>
+                        <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faq">
+                            <div class="accordion-body">Yes, your exam date, planner tasks and theme are stored in your
+                                own browser, so they stay after you refresh.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button class="accordion-button collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#f4">What is the best way to prepare?</button>
+                        </h2>
+                        <div id="f4" class="accordion-collapse collapse" data-bs-parent="#faq">
+                            <div class="accordion-body">Learn formulas first, practise subject-wise, then attempt full
+                                mock tests every week and review each mistake.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fab">
+        <button id="themeBtn" title="Dark mode"><i class="fas fa-moon"></i></button>
+        <button id="topBtn" title="Top"><i class="fas fa-arrow-up"></i></button>
     </div>
 
     <footer class="main-footer">
@@ -184,7 +702,167 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1684242835147633"
+     crossorigin="anonymous"></script>
+     
+    <script>
+        const $ = id => document.getElementById(id);
+        const store = {
+            get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+            set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { } }
+        };
 
+        /* ---------- Animated counters + weightage bars ---------- */
+        const io = new IntersectionObserver(es => es.forEach(e => {
+            if (!e.isIntersecting) return;
+            e.target.querySelectorAll('[data-to]').forEach(n => {
+                const to = +n.dataset.to; let c = 0; const step = Math.max(1, Math.ceil(to / 50));
+                const t = setInterval(() => { c = Math.min(to, c + step); n.textContent = c; if (c >= to) clearInterval(t); }, 25);
+            });
+            e.target.querySelectorAll('[data-w]').forEach(b => b.style.width = b.dataset.w * 2 + '%');
+            io.unobserve(e.target);
+        }), { threshold: .3 });
+        io.observe($('stats')); io.observe($('weightage'));
+
+        /* ---------- Tips ---------- */
+        const tips = [
+            "Start with Mathematics and Reasoning: they carry 65% of the marks.",
+            "Revise formulas daily for 15 minutes; speed beats everything in CBT.",
+            "Attempt one full mock every weekend and analyse every wrong answer.",
+            "General Science is mostly Class 9-10 NCERT. Read it twice.",
+            "Skip a question after 60 seconds. Come back if time remains.",
+            "Remember 1/3 negative marking: guess only when you can eliminate two options.",
+            "Sleep 7 hours before exam day. A tired mind loses marks."
+        ];
+        let tipI = 0;
+        function showTip() { $('tipText').textContent = tips[tipI++ % tips.length]; }
+        $('tipBtn').onclick = showTip; showTip();
+
+        /* ---------- Countdown ---------- */
+        let examDate = store.get('examDate', '');
+        $('examDate').value = examDate;
+        $('examDate').onchange = e => { examDate = e.target.value; store.set('examDate', examDate); tickCd(); };
+        function tickCd() {
+            if (!examDate) { return; }
+            const diff = new Date(examDate + 'T09:00:00') - new Date();
+            if (diff <= 0) { ['D', 'H', 'M', 'S'].forEach(k => $('cd' + k).textContent = 0); $('cdMsg').textContent = 'Exam date has arrived or passed.'; return; }
+            $('cdD').textContent = Math.floor(diff / 864e5);
+            $('cdH').textContent = Math.floor(diff % 864e5 / 36e5);
+            $('cdM').textContent = Math.floor(diff % 36e5 / 6e4);
+            $('cdS').textContent = Math.floor(diff % 6e4 / 1e3);
+            $('cdMsg').textContent = 'Keep going. Every day counts!';
+        }
+        setInterval(tickCd, 1000); tickCd();
+
+        /* ---------- Quick Quiz ---------- */
+        const QS = [
+            { q: "A train 120 m long crosses a pole in 6 s. Its speed in km/h?", o: ["60", "72", "80", "90"], a: 1 },
+            { q: "Next in series: 2, 6, 12, 20, ?", o: ["28", "30", "32", "36"], a: 1 },
+            { q: "SI unit of force?", o: ["Joule", "Watt", "Newton", "Pascal"], a: 2 },
+            { q: "Which gas is most abundant in the atmosphere?", o: ["Oxygen", "Nitrogen", "Argon", "CO2"], a: 1 },
+            { q: "15% of 240 = ?", o: ["32", "34", "36", "38"], a: 2 },
+            { q: "If A is B's brother and B is C's mother, A is C's?", o: ["Father", "Uncle", "Brother", "Grandfather"], a: 1 },
+            { q: "Headquarters of Indian Railways is in?", o: ["Mumbai", "Kolkata", "New Delhi", "Chennai"], a: 2 },
+            { q: "Chemical formula of common salt?", o: ["NaCl", "KCl", "CaCl2", "NaOH"], a: 0 },
+            { q: "Simple interest on 1000 at 5% for 3 years?", o: ["100", "125", "150", "175"], a: 2 },
+            { q: "Vitamin deficiency causing night blindness?", o: ["A", "B", "C", "D"], a: 0 }
+        ];
+        let qi = 0, qs = 0, qOrder = [];
+        function startQuiz() { qOrder = QS.map((_, i) => i).sort(() => Math.random() - .5).slice(0, 5); qi = 0; qs = 0; renderQ(); }
+        function renderQ() {
+            if (qi >= qOrder.length) {
+                $('qBody').innerHTML = `<div class="text-center py-3"><h3>Score: ${qs} / ${qOrder.length}</h3><p class="text-muted">${qs >= 4 ? 'Excellent!' : qs >= 3 ? 'Good, keep practising.' : 'Needs more practice.'}</p><button class="btn btn-primary" id="qAgain">Try Again</button></div>`;
+                $('qAgain').onclick = startQuiz; $('qNext').style.display = 'none'; $('qProg').textContent = ''; return;
+            }
+            const q = QS[qOrder[qi]];
+            $('qProg').textContent = `(${qi + 1}/${qOrder.length})`;
+            $('qScore').textContent = 'Score: ' + qs;
+            $('qNext').style.display = 'none';
+            $('qBody').innerHTML = `<p class="fw-semibold">${q.q}</p>` + q.o.map((t, i) => `<button class="opt" data-i="${i}">${String.fromCharCode(65 + i)}. ${t}</button>`).join('');
+            document.querySelectorAll('#qBody .opt').forEach(b => b.onclick = () => {
+                const pick = +b.dataset.i;
+                document.querySelectorAll('#qBody .opt').forEach(x => { x.disabled = true; if (+x.dataset.i === q.a) x.classList.add('right'); });
+                if (pick === q.a) qs++; else b.classList.add('wrong');
+                $('qScore').textContent = 'Score: ' + qs; $('qNext').style.display = 'inline-block';
+            });
+        }
+        $('qNext').onclick = () => { qi++; renderQ(); };
+        startQuiz();
+
+        /* ---------- Pomodoro ---------- */
+        let secs = 1500, timer = null, sessions = store.get('sessions', 0);
+        $('tmCount').textContent = sessions;
+        function drawTm() { $('tm').textContent = String(Math.floor(secs / 60)).padStart(2, '0') + ':' + String(secs % 60).padStart(2, '0'); }
+        document.querySelectorAll('.mode-btn').forEach(b => b.onclick = () => {
+            document.querySelectorAll('.mode-btn').forEach(x => x.classList.remove('active')); b.classList.add('active');
+            clearInterval(timer); timer = null; secs = +b.dataset.min * 60; drawTm();
+        });
+        $('tmStart').onclick = () => {
+            if (timer) return;
+            timer = setInterval(() => {
+                secs--; drawTm();
+                if (secs <= 0) { clearInterval(timer); timer = null; sessions++; store.set('sessions', sessions); $('tmCount').textContent = sessions; alert('Time is up!'); }
+            }, 1000);
+        };
+        $('tmPause').onclick = () => { clearInterval(timer); timer = null; };
+        $('tmReset').onclick = () => { clearInterval(timer); timer = null; secs = +document.querySelector('.mode-btn.active').dataset.min * 60; drawTm(); };
+
+        /* ---------- Study planner ---------- */
+        let todos = store.get('todos', [{ t: 'Revise Percentage formulas', d: false }, { t: 'Take one mock test', d: false }]);
+        function renderTodos() {
+            $('todoList').innerHTML = todos.map((x, i) => `<div class="todo-item ${x.d ? 'done' : ''}"><input type="checkbox" ${x.d ? 'checked' : ''} data-c="${i}"><span>${x.t.replace(/</g, '&lt;')}</span><button class="btn btn-sm text-danger" data-x="${i}"><i class="fas fa-trash"></i></button></div>`).join('') || '<div class="text-muted small">No tasks yet.</div>';
+            const done = todos.filter(x => x.d).length, pct = todos.length ? Math.round(done / todos.length * 100) : 0;
+            $('todoBar').style.width = pct + '%'; $('todoStat').textContent = `${done} of ${todos.length} done (${pct}%)`;
+            document.querySelectorAll('[data-c]').forEach(c => c.onchange = () => { todos[+c.dataset.c].d = c.checked; store.set('todos', todos); renderTodos(); });
+            document.querySelectorAll('[data-x]').forEach(c => c.onclick = () => { todos.splice(+c.dataset.x, 1); store.set('todos', todos); renderTodos(); });
+        }
+        function addTodo() { const v = $('todoIn').value.trim(); if (!v) return; todos.push({ t: v, d: false }); store.set('todos', todos); $('todoIn').value = ''; renderTodos(); }
+        $('todoAdd').onclick = addTodo; $('todoIn').onkeydown = e => { if (e.key === 'Enter') addTodo(); };
+        renderTodos();
+
+        /* ---------- Formula finder ---------- */
+        const F = [
+            ["Speed", "Speed = Distance / Time"], ["km/h to m/s", "Multiply by 5/18"], ["Train crossing pole", "Time = Length / Speed"],
+            ["Average speed", "2xy / (x + y) for equal distances"], ["Simple Interest", "SI = P x R x T / 100"],
+            ["Compound Interest", "A = P (1 + R/100)^n"], ["Profit %", "(Profit / CP) x 100"], ["Discount %", "(Discount / MP) x 100"],
+            ["Area of circle", "pi r^2"], ["Circumference", "2 pi r"], ["Area of triangle", "1/2 x base x height"],
+            ["Volume of cylinder", "pi r^2 h"], ["Volume of cone", "1/3 pi r^2 h"], ["Surface area of sphere", "4 pi r^2"],
+            ["Pythagoras", "a^2 + b^2 = c^2"], ["(a+b)^2", "a^2 + 2ab + b^2"], ["a^2 - b^2", "(a + b)(a - b)"],
+            ["Work", "Work = Rate x Time; A+B together = AB / (A+B) days"], ["Ohm's law", "V = I x R"], ["Force", "F = m x a"],
+            ["Kinetic energy", "1/2 m v^2"], ["Density", "Mass / Volume"], ["Average", "Sum of observations / Number"]
+        ];
+        function drawF(q = '') {
+            const r = F.filter(x => (x[0] + x[1]).toLowerCase().includes(q.toLowerCase()));
+            $('fList').innerHTML = r.map(x => `<div class="col-md-6"><div class="formula-item"><b>${x[0]}</b>${x[1]}</div></div>`).join('') || '<div class="text-muted">No formula found.</div>';
+        }
+        $('fSearch').oninput = e => drawF(e.target.value); drawF();
+
+        /* ---------- Calculators ---------- */
+        const num = id => parseFloat($(id).value);
+        $('pGo').onclick = () => {
+            const a = num('pA'), b = num('pB');
+            $('pOut').textContent = isNaN(a) || isNaN(b) ? 'Enter both values.' : `${a}% of ${b} = ${(a * b / 100).toFixed(2)}`;
+        };
+        $('siGo').onclick = () => {
+            const p = num('siP'), r = num('siR'), t = num('siT');
+            if ([p, r, t].some(isNaN)) return $('siOut').textContent = 'Fill all fields.';
+            const si = p * r * t / 100, ci = p * Math.pow(1 + r / 100, t) - p;
+            $('siOut').innerHTML = `SI = ${si.toFixed(2)}<br>CI = ${ci.toFixed(2)}<br>Amount (SI) = ${(p + si).toFixed(2)}`;
+        };
+        $('sdGo').onclick = () => {
+            const s = num('sdS'), d = num('sdD'), t = num('sdT'), blank = [s, d, t].filter(isNaN).length;
+            if (blank !== 1) return $('sdOut').textContent = 'Leave exactly one field blank.';
+            if (isNaN(s)) $('sdOut').textContent = `Speed = ${(d / t).toFixed(2)} km/h`;
+            else if (isNaN(d)) $('sdOut').textContent = `Distance = ${(s * t).toFixed(2)} km`;
+            else $('sdOut').textContent = `Time = ${(d / s).toFixed(2)} hours`;
+        };
+
+        /* ---------- Theme + back to top ---------- */
+        function setTheme(d) { document.body.classList.toggle('dark', d); $('themeBtn').innerHTML = d ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>'; store.set('dark', d); }
+        $('themeBtn').onclick = () => setTheme(!document.body.classList.contains('dark'));
+        setTheme(store.get('dark', false));
+        $('topBtn').onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+    </script>
 </body>
 
 </html>
